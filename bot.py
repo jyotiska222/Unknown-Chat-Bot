@@ -523,7 +523,7 @@ if __name__ == "__main__":
     chat_manager.auto_save_users()
     
     # Set the start time
-    start_time = time.time()
+    start_time = datetime.datetime.now()
     
     # Command handlers
     app.add_handler(CommandHandler("start", start))
