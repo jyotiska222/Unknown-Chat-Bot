@@ -1,0 +1,1726 @@
+{
+  "created_at": "2025-04-30T02:41:40.060033",
+  "chats": {
+    "997570281_7493001547": {
+      "users": [
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        },
+        {
+          "id": 7493001547,
+          "username": "Agjk012"
+        }
+      ],
+      "started_at": "2025-04-30T02:41:40.050544",
+      "messages": []
+    },
+    "2023022792_7988565300": {
+      "users": [
+        {
+          "id": 2023022792,
+          "username": "moyemoye0011"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-04-30T05:05:05.471831",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T05:05:52.440040",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ]
+    },
+    "5448598837_6674830074": {
+      "users": [
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-04-30T06:37:15.905403",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T06:37:24.431464",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:37.345943",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:37.646040",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "M/F?"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:40.610020",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:45.273840",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "And you"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:47.428971",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Name?"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:54.159893",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Prince"
+        },
+        {
+          "timestamp": "2025-04-30T06:37:57.323044",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Girl"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:03.561363",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:11.348635",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Tripura"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:18.447298",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:21.902072",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "I am from Bihar"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:28.611744",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Working in delhi"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:36.655310",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "In IT sector"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:37.110895",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Kya kaam?"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:45.201483",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Kiska ?"
+        },
+        {
+          "timestamp": "2025-04-30T06:38:46.809397",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Ohh"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:05.995097",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "May I see ur photo?"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:06.918856",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Can we connect in personal"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:13.718191",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "No dear"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:14.012192",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Sure"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:33.034797",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "photo",
+          "content": "",
+          "media_url": "https://api.telegram.org/file/bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/photos/file_106.jpg"
+        },
+        {
+          "timestamp": "2025-04-30T06:39:36.040555",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Send your"
+        },
+        {
+          "timestamp": "2025-04-30T06:40:06.375887",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Send your please"
+        },
+        {
+          "timestamp": "2025-04-30T06:40:27.076148",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Mother chod, vaag sala, apni behen ko Jake chod, rendi ka bachha. Mayne tujhko pehchan Li. Avi police ko tera photo vejti hu."
+        }
+      ],
+      "ended_at": "2025-04-30T06:40:29.018325",
+      "end_reason": "manual",
+      "ended_by": 5448598837
+    },
+    "6674830074_7988565300": {
+      "users": [
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-04-30T06:25:50.272256",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T06:25:52.867379",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T06:25:53.443590",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-04-30T06:25:56.776996",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:01.360036",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Chandan jha"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:05.511498",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:06.151585",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Male here"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:13.974928",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "And your"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:44.223938",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "?"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:55.155532",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "I am from Delhi"
+        },
+        {
+          "timestamp": "2025-04-30T06:26:56.908153",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "And you"
+        },
+        {
+          "timestamp": "2025-04-30T06:27:26.395800",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Male bro"
+        }
+      ],
+      "ended_at": "2025-04-30T06:28:20.453556",
+      "end_reason": "manual",
+      "ended_by": 6674830074
+    },
+    "2023022792_6674830074": {
+      "users": [
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        },
+        {
+          "id": 2023022792,
+          "username": "moyemoye0011"
+        }
+      ],
+      "started_at": "2025-04-30T06:49:02.131611",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T06:49:05.741716",
+          "sender_id": 2023022792,
+          "sender_username": "moyemoye0011",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T06:49:07.760030",
+          "sender_id": 2023022792,
+          "sender_username": "moyemoye0011",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T06:49:14.150975",
+          "sender_id": 2023022792,
+          "sender_username": "moyemoye0011",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "??"
+        }
+      ],
+      "ended_at": "2025-04-30T06:49:16.251353",
+      "end_reason": "manual",
+      "ended_by": 2023022792
+    },
+    "6409611144_6674830074": {
+      "users": [
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        },
+        {
+          "id": 6409611144,
+          "username": "Anurag"
+        }
+      ],
+      "started_at": "2025-04-30T07:00:45.085252",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T07:01:15.376041",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-04-30T07:01:36.650030",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T07:01:48.542589",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Dillu Singh here"
+        },
+        {
+          "timestamp": "2025-04-30T07:01:56.545144",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "From gurgaon Haryana"
+        },
+        {
+          "timestamp": "2025-04-30T07:01:58.046953",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "And you"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:08.697251",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Prakriti"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:17.641842",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "From Bengal"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:17.929173",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Kha sea hoo aap ji"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:32.938024",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Ooo"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:35.198156",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Married or single"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:46.027414",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Single hoon"
+        },
+        {
+          "timestamp": "2025-04-30T07:02:56.925017",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Aacha"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:00.429879",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Aur aap"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:05.275937",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Single"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:14.390650",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Personal mea aaoge"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:44.274535",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Personal chat pea"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:44.917656",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Kyu yaha pe kya prblm"
+        },
+        {
+          "timestamp": "2025-04-30T07:03:58.652751",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Yha bnd hoo jayege na"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:02.887053",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Thodi der mea"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:21.135442",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Anurag ko jante ho aap?"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:22.381944",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Wha parmanent rhage"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:26.928864",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Q"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:44.628825",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Kyuki main hi woh hoon laude \ud83d\ude02\ud83d\ude02"
+        },
+        {
+          "timestamp": "2025-04-30T07:04:59.426163",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Tu maa chuda \nRandi kea"
+        }
+      ],
+      "ended_at": "2025-04-30T07:05:06.783961",
+      "end_reason": "manual",
+      "ended_by": 6674830074
+    },
+    "2023022792_5448598837": {
+      "users": [
+        {
+          "id": 2023022792,
+          "username": "moyemoye0011"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-04-30T08:08:29.562141",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T08:09:00.890392",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T08:09:08.706253",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "Name please"
+        },
+        {
+          "timestamp": "2025-04-30T08:09:51.060916",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T08:10:05.637542",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "F, Cuttack"
+        }
+      ],
+      "ended_at": "2025-04-30T08:10:31.271347",
+      "end_reason": "manual",
+      "ended_by": 5448598837
+    },
+    "1437726359_5448598837": {
+      "users": [
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-04-30T08:10:38.079246",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T08:10:44.039825",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T08:10:50.036318",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Name?"
+        },
+        {
+          "timestamp": "2025-04-30T08:10:56.767353",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Tupai"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:04.531312",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:18.368003",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Coochbehar"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:20.201949",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "You?"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:28.519543",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Medinipur"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:43.718525",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Show ur photo"
+        },
+        {
+          "timestamp": "2025-04-30T08:11:59.261938",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "I am male"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:02.331864",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "I am Priyanka"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:18.211280",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "I know"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:26.009568",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Did we talk yesterday?"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:33.494094",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Saltlake?"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:33.838768",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "When?"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:39.056547",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Around 4"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:39.905016",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "?"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:43.700520",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "R u mad?"
+        },
+        {
+          "timestamp": "2025-04-30T08:12:49.172224",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "From kharagpur?"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:00.036764",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Someone was there"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:09.675441",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Sorry I mixed you up"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:10.632955",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "I think u r Psycho"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:13.837571",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "May be"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:22.927359",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Ok bye"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:49.909141",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "photo",
+          "content": "",
+          "media_url": "https://api.telegram.org/file/bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/photos/file_107.jpg"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:51.307924",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "This?"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:53.211959",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "You?"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:57.365419",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Talk?"
+        },
+        {
+          "timestamp": "2025-04-30T08:13:57.695741",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "I can't chat with Psycho"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:05.295228",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "No. Not me"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:11.232922",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Really?"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:13.613276",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Show pic"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:16.332266",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Show ur pic"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:20.413125",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:55.142714",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "photo",
+          "content": "",
+          "media_url": "https://api.telegram.org/file/bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/photos/file_108.jpg"
+        },
+        {
+          "timestamp": "2025-04-30T08:14:56.160866",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "This"
+        },
+        {
+          "timestamp": "2025-04-30T08:15:00.538312",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Wait maa is calling"
+        },
+        {
+          "timestamp": "2025-04-30T08:15:06.602720",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hm"
+        },
+        {
+          "timestamp": "2025-04-30T08:15:09.522001",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Show your pic"
+        },
+        {
+          "timestamp": "2025-04-30T08:16:59.152272",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Tell"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:19.213099",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "."
+        },
+        {
+          "timestamp": "2025-04-30T08:17:20.390743",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Send"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:20.936823",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Is it u ?"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:24.934398",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Yes"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:31.689093",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "U r really handsome"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:41.118126",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Ki koro?"
+        },
+        {
+          "timestamp": "2025-04-30T08:17:43.962934",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Job?"
+        },
+        {
+          "timestamp": "2025-04-30T08:18:03.006698",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "photo",
+          "content": "",
+          "media_url": "https://api.telegram.org/file/bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/photos/file_109.jpg"
+        },
+        {
+          "timestamp": "2025-04-30T08:18:03.283867",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Na, studies, tomar pic dao"
+        },
+        {
+          "timestamp": "2025-04-30T08:18:03.814156",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "It's me"
+        },
+        {
+          "timestamp": "2025-04-30T08:18:15.555946",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Accha"
+        },
+        {
+          "timestamp": "2025-04-30T08:18:17.124217",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Kon class?"
+        },
+        {
+          "timestamp": "2025-04-30T08:19:16.175473",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Ami 1st year a pori"
+        },
+        {
+          "timestamp": "2025-04-30T08:19:19.619827",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "3rd year"
+        }
+      ],
+      "ended_at": "2025-04-30T08:19:22.873878",
+      "end_reason": "manual",
+      "ended_by": 1437726359
+    },
+    "5448598837_6688790694": {
+      "users": [
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-04-30T09:20:23.555152",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T09:20:29.509000",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T09:31:45.034303",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T09:32:04.362651",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "M or f?"
+        },
+        {
+          "timestamp": "2025-04-30T09:33:19.099369",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "M here"
+        },
+        {
+          "timestamp": "2025-04-30T09:33:49.317405",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Mee too m"
+        },
+        {
+          "timestamp": "2025-04-30T09:34:08.081374",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T09:40:47.436089",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Kolkata"
+        },
+        {
+          "timestamp": "2025-04-30T09:41:09.719309",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Do u have any numbers of girls?"
+        },
+        {
+          "timestamp": "2025-04-30T09:41:36.496228",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Na vai amr kacheo number nei"
+        },
+        {
+          "timestamp": "2025-04-30T09:41:51.375156",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Ami aged matured like kori besi"
+        },
+        {
+          "timestamp": "2025-04-30T09:42:25.231849",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Incest o ami"
+        },
+        {
+          "timestamp": "2025-04-30T09:46:27.805233",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Kar sathe insect korecho?"
+        },
+        {
+          "timestamp": "2025-04-30T09:47:20.787218",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Kakima r sathe"
+        },
+        {
+          "timestamp": "2025-04-30T09:47:44.030159",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Maer opor o valo lage"
+        }
+      ],
+      "ended_at": "2025-04-30T10:07:11.074209",
+      "end_reason": "manual",
+      "ended_by": 6688790694
+    },
+    "5448598837_5799548923": {
+      "users": [
+        {
+          "id": 5799548923,
+          "username": "itzdevilking143"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-04-30T10:33:28.566974",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T10:33:39.058655",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T10:33:39.669886",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Who r u?"
+        },
+        {
+          "timestamp": "2025-04-30T10:33:44.718538",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Ur name"
+        },
+        {
+          "timestamp": "2025-04-30T10:33:51.338176",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Male here and you??"
+        },
+        {
+          "timestamp": "2025-04-30T10:33:58.795705",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Tomar bolo agey"
+        },
+        {
+          "timestamp": "2025-04-30T10:34:07.098646",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Prince"
+        },
+        {
+          "timestamp": "2025-04-30T10:34:10.589849",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Ar tmr??"
+        },
+        {
+          "timestamp": "2025-04-30T10:34:22.120789",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Sala pagol choda."
+        }
+      ],
+      "ended_at": "2025-04-30T10:34:23.749061",
+      "end_reason": "manual",
+      "ended_by": 5448598837
+    },
+    "5799548923_6674830074": {
+      "users": [
+        {
+          "id": 5799548923,
+          "username": "itzdevilking143"
+        },
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        }
+      ],
+      "started_at": "2025-04-30T10:42:50.774122",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T10:42:55.296568",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hey"
+        },
+        {
+          "timestamp": "2025-04-30T10:42:55.576072",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Hey"
+        },
+        {
+          "timestamp": "2025-04-30T10:43:02.600814",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Male here"
+        },
+        {
+          "timestamp": "2025-04-30T10:43:03.965038",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "And you"
+        },
+        {
+          "timestamp": "2025-04-30T10:43:10.018801",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Am also male"
+        }
+      ],
+      "ended_at": "2025-04-30T10:43:11.384358",
+      "end_reason": "manual",
+      "ended_by": 5799548923
+    },
+    "1923818771_5799548923": {
+      "users": [
+        {
+          "id": 1923818771,
+          "username": "unique782"
+        },
+        {
+          "id": 5799548923,
+          "username": "itzdevilking143"
+        }
+      ],
+      "started_at": "2025-04-30T10:45:14.303310",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T10:45:20.218667",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T10:45:28.368255",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Male here & you??"
+        }
+      ],
+      "ended_at": "2025-04-30T10:45:35.005201",
+      "end_reason": "manual",
+      "ended_by": 1923818771
+    },
+    "1923818771_6674830074": {
+      "users": [
+        {
+          "id": 1923818771,
+          "username": "unique782"
+        },
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        }
+      ],
+      "started_at": "2025-04-30T10:44:42.421229",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T10:44:47.582461",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Male here"
+        },
+        {
+          "timestamp": "2025-04-30T10:44:49.031509",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "U??"
+        }
+      ],
+      "ended_at": "2025-04-30T10:44:52.886662",
+      "end_reason": "manual",
+      "ended_by": 6674830074
+    },
+    "1923818771_5448598837": {
+      "users": [
+        {
+          "id": 1923818771,
+          "username": "unique782"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-04-30T10:48:21.960200",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T10:48:31.221758",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Naam ki bolo"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:32.318150",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Male or female??"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:38.442084",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:40.184257",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:43.523603",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Male"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:45.746926",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Naam ki?"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:47.506406",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Tmr name ki??"
+        },
+        {
+          "timestamp": "2025-04-30T10:48:58.725330",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Prince ar tmr"
+        },
+        {
+          "timestamp": "2025-04-30T10:49:24.957971",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "??"
+        },
+        {
+          "timestamp": "2025-04-30T10:49:35.723478",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Uffff abar sei pagol choda, loker sathe amake golabe. Vaag toh sala harami."
+        }
+      ],
+      "ended_at": "2025-04-30T10:49:37.603929",
+      "end_reason": "manual",
+      "ended_by": 5448598837
+    },
+    "2023022792_6261300717": {
+      "users": [
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        },
+        {
+          "id": 2023022792,
+          "username": "moyemoye0011"
+        }
+      ],
+      "started_at": "2025-04-30T12:44:53.995090+00:00",
+      "messages": []
+    }
+  }
+}

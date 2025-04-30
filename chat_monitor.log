@@ -371,3 +371,9 @@
 2025-04-26 20:41:38,389 - chat_monitor - INFO - Chat started between 6261300717 and 2023022792
 2025-04-26 20:41:40,940 - chat_monitor - INFO - Logged text message from 2023022792 to 6261300717
 2025-04-26 20:41:44,549 - chat_monitor - INFO - Chat ended between 2023022792 and 6261300717, reason: manual
+2025-04-30 16:41:19,102 - chat_monitor - INFO - Created new log file: chat_logs\chat_logs_2025-04-30.json
+2025-04-30 17:48:56,938 - chat_monitor - INFO - Chat started between 6261300717 and 2023022792
+2025-04-30 17:48:59,891 - chat_monitor - INFO - Logged text message from 2023022792 to 6261300717
+2025-04-30 17:49:15,406 - chat_monitor - INFO - Logged text message from 6261300717 to 2023022792
+2025-04-30 17:52:27,481 - chat_monitor - INFO - Chat ended between 6261300717 and 2023022792, reason: admin_action: suspicious behaviour
+2025-04-30 18:14:54,021 - chat_monitor - INFO - Chat started between 6261300717 and 2023022792

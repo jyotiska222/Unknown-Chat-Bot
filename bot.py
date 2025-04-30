@@ -5,13 +5,13 @@ import signal
 import threading
 import time
 import datetime
+import pytz  # For proper timezone handling
 from telegram import Update
 from telegram.ext import (
-    ApplicationBuilder, 
+    Updater,
     CommandHandler, 
     MessageHandler, 
-    filters, 
-    ContextTypes,
+    Filters, 
     CallbackContext
 )
 from telegram.error import TelegramError, Conflict
@@ -29,16 +29,45 @@ logger = logging.getLogger(__name__)
 # Admin IDs who are allowed to use broadcast
 ADMIN_IDS = [2023022792]  # Admin user ID
 
-# Initialize the app without session_name
-app = ApplicationBuilder().token(BOT_TOKEN).build()
+# Initialize the updater and dispatcher
+updater = Updater(token=BOT_TOKEN)
+dispatcher = updater.dispatcher
 
 # To track start time
 start_time = None
 
+# Set timezone - use UTC for production environments for consistency
+TIMEZONE = pytz.timezone('UTC')  # Change to your timezone if needed, e.g., 'America/New_York'
+
+def get_localized_time(timestamp=None):
+    """Get timezone-aware datetime object or convert timestamp to local time"""
+    if timestamp is None:
+        # Current time
+        return datetime.datetime.now(TIMEZONE)
+    else:
+        # Convert timestamp to datetime
+        dt = datetime.datetime.fromtimestamp(timestamp)
+        return TIMEZONE.localize(dt)
+
+def format_datetime(dt):
+    """Format datetime object to string"""
+    return dt.strftime('%Y-%m-%d %H:%M:%S %Z')
+
 # /start command
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     username = update.effective_user.username or update.effective_user.first_name
+    
+    # Check if user is banned
+    ban_info = chat_manager.is_banned(user_id)
+    if ban_info:
+        ban_duration = format_datetime(get_localized_time(ban_info["until"]))
+        update.message.reply_text(
+            f"⛔ You are currently banned from using this bot.\n"
+            f"Reason: {ban_info['reason']}\n"
+            f"Ban expires: {ban_duration}"
+        )
+        return
     
     # Register or update user in user_stats
     if user_id not in chat_manager.user_stats:
@@ -46,7 +75,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         chat_manager.user_stats[user_id]["username"] = username
     
-    await update.message.reply_text(
+    update.message.reply_text(
         "Welcome to Unknown Chat Bot! 👋\n\n"
         "Commands:\n"
         "/chat - Find a random stranger to chat with\n"
@@ -56,16 +85,27 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 # /chat command
-async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def chat(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     username = update.effective_user.username or update.effective_user.first_name
+    
+    # Check if user is banned
+    ban_info = chat_manager.is_banned(user_id)
+    if ban_info:
+        ban_duration = format_datetime(get_localized_time(ban_info["until"]))
+        update.message.reply_text(
+            f"⛔ You are currently banned from using this bot.\n"
+            f"Reason: {ban_info['reason']}\n"
+            f"Ban expires: {ban_duration}"
+        )
+        return
     
     # Leave current chat if exists
     if chat_manager.is_chatting(user_id):
         partner = chat_manager.leave_chat(user_id)
         if partner:
             try:
-                await context.bot.send_message(partner, "🚫 The stranger left the chat.")
+                context.bot.send_message(partner, "🚫 The stranger left the chat.")
                 # Log chat end
                 chat_monitor.log_chat_end(user_id, partner, reason="started_new")
             except TelegramError as e:
@@ -80,8 +120,8 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user1, user2 = chat_manager.match_users()
     if user1 and user2:
         try:
-            await context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi!")
-            await context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi!")
+            context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi!")
+            context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi!")
             
             # Get usernames
             user1_name = chat_manager.user_stats[user1].get("username", "Unknown")
@@ -98,17 +138,17 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
             chat_manager.add_to_queue(user1, chat_manager.user_stats[user1].get("username"))
             chat_manager.add_to_queue(user2, chat_manager.user_stats[user2].get("username"))
     else:
-        await update.message.reply_text("🔎 Looking for a partner... Please wait.")
+        update.message.reply_text("🔎 Looking for a partner... Please wait.")
         logger.info(f"User {user_id} ({username}) waiting for a partner")
 
 # /leave command
-async def leave(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def leave(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     partner = chat_manager.leave_chat(user_id)
     if partner:
         try:
-            await context.bot.send_message(partner, "🚫 The stranger left the chat.")
-            await update.message.reply_text("❌ You left the chat.")
+            context.bot.send_message(partner, "🚫 The stranger left the chat.")
+            update.message.reply_text("❌ You left the chat.")
             
             # Log chat end
             chat_monitor.log_chat_end(user_id, partner, reason="manual")
@@ -116,33 +156,56 @@ async def leave(update: Update, context: ContextTypes.DEFAULT_TYPE):
             logger.info(f"User {user_id} left chat with {partner}")
         except TelegramError as e:
             logger.error(f"Failed to notify partner about leaving: {e}")
-            await update.message.reply_text("❌ You left the chat.")
+            update.message.reply_text("❌ You left the chat.")
     else:
         # Also remove from waiting queue if they're waiting
         if chat_manager.remove_from_queue(user_id):
-            await update.message.reply_text("❌ You left the waiting queue.")
+            update.message.reply_text("❌ You left the waiting queue.")
             logger.info(f"User {user_id} left waiting queue")
         else:
-            await update.message.reply_text("You are not chatting with anyone right now.")
+            update.message.reply_text("You are not chatting with anyone right now.")
 
 # /status command
-async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def status(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     
+    # Check if user is banned
+    ban_info = chat_manager.is_banned(user_id)
+    if ban_info:
+        ban_duration = format_datetime(get_localized_time(ban_info["until"]))
+        update.message.reply_text(
+            f"⛔ You are currently banned from using this bot.\n"
+            f"Reason: {ban_info['reason']}\n"
+            f"Ban expires: {ban_duration}"
+        )
+        return
+    
     if chat_manager.is_chatting(user_id):
-        await update.message.reply_text("You are currently chatting with a stranger. Use /leave to end the chat.")
+        update.message.reply_text("You are currently chatting with a stranger. Use /leave to end the chat.")
     elif user_id in chat_manager.waiting_users:
-        await update.message.reply_text("You are in the waiting queue. Use /leave to exit the queue.")
+        update.message.reply_text("You are in the waiting queue. Use /leave to exit the queue.")
     else:
-        await update.message.reply_text("You are not chatting or waiting. Use /chat to find someone.")
+        update.message.reply_text("You are not chatting or waiting. Use /chat to find someone.")
 
 # Improved media forwarding with better error handling
-async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def forward(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
+    
+    # Check if user is banned
+    ban_info = chat_manager.is_banned(user_id)
+    if ban_info:
+        ban_duration = format_datetime(get_localized_time(ban_info["until"]))
+        update.message.reply_text(
+            f"⛔ You are currently banned from using this bot.\n"
+            f"Reason: {ban_info['reason']}\n"
+            f"Ban expires: {ban_duration}"
+        )
+        return
+    
     partner_id = chat_manager.get_partner(user_id)
     
     if not partner_id:
-        await update.message.reply_text("💬 Use /chat to find someone to talk to.")
+        update.message.reply_text("💬 Use /chat to find someone to talk to.")
         return
     
     # Get usernames
@@ -152,7 +215,7 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         # Text messages
         if update.message.text and not update.message.text.startswith('/'):
-            await context.bot.send_message(
+            context.bot.send_message(
                 partner_id, 
                 update.message.text
             )
@@ -171,14 +234,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif update.message.photo:
             # Get the largest photo (best quality)
             photo = update.message.photo[-1]
-            await context.bot.send_photo(
+            context.bot.send_photo(
                 partner_id,
                 photo.file_id,
                 caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            photo_file = await photo.get_file()
+            photo_file = photo.get_file()
             photo_url = photo_file.file_path  # This contains the URL
             
             # Log the photo message
@@ -195,15 +258,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Videos
         elif update.message.video:
-            await context.bot.send_video(
+            context.bot.send_video(
                 partner_id,
                 update.message.video.file_id,
-                caption=update.message.caption or "",
-                supports_streaming=True
+                caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            video_file = await update.message.video.get_file()
+            video_file = update.message.video.get_file()
             video_url = video_file.file_path
             
             # Log the video message
@@ -211,7 +273,7 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 user_id=user_id,
                 partner_id=partner_id,
                 message_type="video",
-                content="",  # Empty content for video
+                content="",
                 media_url=video_url,
                 caption=update.message.caption,
                 username=username,
@@ -220,7 +282,7 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Stickers
         elif update.message.sticker:
-            await context.bot.send_sticker(
+            context.bot.send_sticker(
                 partner_id,
                 update.message.sticker.file_id
             )
@@ -228,7 +290,7 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
             # Log the sticker message
             sticker_url = None
             try:
-                sticker_file = await update.message.sticker.get_file()
+                sticker_file = update.message.sticker.get_file()
                 sticker_url = sticker_file.file_path
             except:
                 pass
@@ -245,13 +307,13 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Video notes (circular videos)
         elif update.message.video_note:
-            await context.bot.send_video_note(
+            context.bot.send_video_note(
                 partner_id,
                 update.message.video_note.file_id
             )
             
             # Get file URL for monitoring
-            video_note_file = await update.message.video_note.get_file()
+            video_note_file = update.message.video_note.get_file()
             video_note_url = video_note_file.file_path
             
             # Log the video note message
@@ -267,14 +329,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Voice notes
         elif update.message.voice:
-            await context.bot.send_voice(
+            context.bot.send_voice(
                 partner_id,
                 update.message.voice.file_id,
                 caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            voice_file = await update.message.voice.get_file()
+            voice_file = update.message.voice.get_file()
             voice_url = voice_file.file_path
             
             # Log the voice message
@@ -291,14 +353,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Documents/files
         elif update.message.document:
-            await context.bot.send_document(
+            context.bot.send_document(
                 partner_id,
                 update.message.document.file_id,
                 caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            doc_file = await update.message.document.get_file()
+            doc_file = update.message.document.get_file()
             doc_url = doc_file.file_path
             
             # Log the document message
@@ -315,14 +377,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Audio files
         elif update.message.audio:
-            await context.bot.send_audio(
+            context.bot.send_audio(
                 partner_id,
                 update.message.audio.file_id,
                 caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            audio_file = await update.message.audio.get_file()
+            audio_file = update.message.audio.get_file()
             audio_url = audio_file.file_path
             
             # Log the audio message
@@ -339,14 +401,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Animations/GIFs
         elif update.message.animation:
-            await context.bot.send_animation(
+            context.bot.send_animation(
                 partner_id,
                 update.message.animation.file_id,
                 caption=update.message.caption or ""
             )
             
             # Get file URL for monitoring
-            animation_file = await update.message.animation.get_file()
+            animation_file = update.message.animation.get_file()
             animation_url = animation_file.file_path
             
             # Log the animation message
@@ -363,80 +425,408 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
             
     except TelegramError as e:
         logger.error(f"Failed to forward message: {e}")
-        # If we can't send to partner, they may have blocked the bot
-        if "blocked" in str(e).lower() or "not found" in str(e).lower():
-            await update.message.reply_text("⚠️ Cannot send message. The stranger may have left the chat.")
-            # Automatically disconnect if partner is unavailable
-            chat_manager.leave_chat(user_id)
+        update.message.reply_text("⚠️ Failed to send your message.")
+        
+        # Check if the partner's chat is still valid
+        if "blocked" in str(e).lower() or "not found" in str(e).lower() or "deactivated" in str(e).lower():
+            # Partner has blocked the bot or deleted their account
+            partner = chat_manager.leave_chat(user_id)
+            if partner:
+                update.message.reply_text("❌ Chat ended because the stranger is no longer available.")
+                # Log chat end
+                chat_monitor.log_chat_end(user_id, partner, reason="partner_unavailable")
+
+# Admin commands
+def admin_end_chat(update: Update, context: CallbackContext):
+    """Admin command to forcefully end a chat between users"""
+    user_id = update.effective_user.id
+    
+    # Check if user is an admin
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized admin_end_chat attempt by user {user_id}")
+        return
+    
+    # Check if target user ID is provided
+    if not context.args or len(context.args) < 1:
+        update.message.reply_text("Usage: /endchat <user_id> [reason]")
+        return
+    
+    try:
+        target_user_id = int(context.args[0])
+        reason = " ".join(context.args[1:]) if len(context.args) > 1 else "Admin action"
+        
+        # Check if user is in a chat
+        if not chat_manager.is_chatting(target_user_id):
+            update.message.reply_text(f"User {target_user_id} is not currently in a chat.")
+            return
+        
+        # Get partner before ending chat
+        partner_id = chat_manager.get_partner(target_user_id)
+        
+        # End the chat
+        if chat_manager.admin_end_chat(target_user_id, reason=reason):
+            # Notify users
+            try:
+                context.bot.send_message(
+                    target_user_id, 
+                    f"⛔ Your chat has been ended by an admin.\nReason: {reason}"
+                )
+                
+                if partner_id:
+                    context.bot.send_message(
+                        partner_id, 
+                        f"⛔ Your chat has been ended by an admin.\nReason: {reason}"
+                    )
+                
             # Log chat end
-            chat_monitor.log_chat_end(user_id, partner_id, reason="connection_lost")
+                if partner_id:
+                    chat_monitor.log_chat_end(target_user_id, partner_id, reason=f"admin_action: {reason}")
+                
+                update.message.reply_text(f"✅ Successfully ended chat for user {target_user_id}")
+                logger.info(f"Admin {user_id} ended chat for user {target_user_id}. Reason: {reason}")
+                
+            except TelegramError as e:
+                update.message.reply_text(f"✅ Chat ended but failed to notify users: {e}")
+                logger.error(f"Failed to notify users about admin ending chat: {e}")
         else:
-            await update.message.reply_text("⚠️ Failed to send message. Please try again.")
+            update.message.reply_text(f"❌ Failed to end chat for user {target_user_id}")
+    
+    except ValueError:
+        update.message.reply_text("❌ Invalid user ID. Please provide a valid numeric user ID.")
 
-# Error handler for the bot
-async def error_handler(update, context):
-    """Log the error and send a message to the user if possible."""
-    logger.warning(f'Update {update} caused error {context.error}')
+def admin_ban_user(update: Update, context: CallbackContext):
+    """Admin command to ban a user for a specified duration"""
+    user_id = update.effective_user.id
     
-    # Handle the conflict error specifically
-    if isinstance(context.error, Conflict):
-        logger.info("Conflict detected, waiting before reconnecting...")
-        await asyncio.sleep(5)  # Wait 5 seconds before retry
+    # Check if user is an admin
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized admin_ban_user attempt by user {user_id}")
+        return
     
-    # For user-facing errors, notify them if possible
-    if update and update.effective_message:
-        try:
-            await update.effective_message.reply_text(
-                "⚠️ Sorry, I encountered an error processing your request. Please try again later."
+    # Check if enough arguments are provided
+    if not context.args or len(context.args) < 2:
+        update.message.reply_text(
+            "Usage: /ban <user_id> <duration_hours> [reason]\n\n"
+            "Example: /ban 123456789 24 Inappropriate behavior"
+        )
+        return
+    
+    try:
+        target_user_id = int(context.args[0])
+        duration_hours = float(context.args[1])
+        reason = " ".join(context.args[2:]) if len(context.args) > 2 else "Violation of terms"
+        
+        # Ban the user
+        if chat_manager.ban_user(target_user_id, duration_hours, reason):
+            # Get username for logging
+            username = chat_manager.user_stats.get(target_user_id, {}).get("username", "Unknown")
+            
+            # Format ban duration for display
+            ban_until = time.time() + (duration_hours * 3600)
+            ban_until_str = format_datetime(get_localized_time(ban_until))
+            
+            # Notify the user
+            try:
+                context.bot.send_message(
+                    target_user_id, 
+                    f"⛔ You have been banned from using this bot.\n"
+                    f"Reason: {reason}\n"
+                    f"Duration: {duration_hours} hours\n"
+                    f"Ban expires: {ban_until_str}"
+                )
+            except TelegramError as e:
+                logger.error(f"Failed to notify user {target_user_id} about ban: {e}")
+            
+            update.message.reply_text(
+                f"✅ User {target_user_id} ({username}) has been banned for {duration_hours} hours.\n"
+                f"Reason: {reason}\n"
+                f"Ban expires: {ban_until_str}"
             )
-        except:
-            pass
+            
+            logger.info(f"Admin {user_id} banned user {target_user_id} ({username}) for {duration_hours} hours. Reason: {reason}")
+        else:
+            update.message.reply_text(f"❌ Failed to ban user {target_user_id}")
+    
+    except ValueError:
+        update.message.reply_text("❌ Invalid user ID or duration. Please provide valid numeric values.")
 
-# Display analytics periodically in terminal
+def admin_unban_user(update: Update, context: CallbackContext):
+    """Admin command to unban a user"""
+    user_id = update.effective_user.id
+    
+    # Check if user is an admin
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized admin_unban_user attempt by user {user_id}")
+        return
+    
+    # Check if target user ID is provided
+    if not context.args or len(context.args) < 1:
+        update.message.reply_text("Usage: /unban <user_id>")
+        return
+    
+    try:
+        target_user_id = int(context.args[0])
+        
+        # Check if user is banned
+        if not chat_manager.is_banned(target_user_id):
+            update.message.reply_text(f"User {target_user_id} is not currently banned.")
+            return
+        
+        # Unban the user
+        if chat_manager.unban_user(target_user_id):
+            # Get username for logging
+            username = chat_manager.user_stats.get(target_user_id, {}).get("username", "Unknown")
+            
+            # Notify the user
+            try:
+                context.bot.send_message(
+                    target_user_id, 
+                    f"✅ Your ban has been lifted. You can now use the bot again."
+                )
+            except TelegramError as e:
+                logger.error(f"Failed to notify user {target_user_id} about unban: {e}")
+            
+            update.message.reply_text(f"✅ User {target_user_id} ({username}) has been unbanned.")
+            logger.info(f"Admin {user_id} unbanned user {target_user_id} ({username})")
+        else:
+            update.message.reply_text(f"❌ Failed to unban user {target_user_id}")
+    
+    except ValueError:
+        update.message.reply_text("❌ Invalid user ID. Please provide a valid numeric user ID.")
+
+def admin_list_banned(update: Update, context: CallbackContext):
+    """Admin command to list all banned users"""
+    user_id = update.effective_user.id
+    
+    # Check if user is an admin
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized admin_list_banned attempt by user {user_id}")
+        return
+    
+    # Get all banned users
+    banned_users = chat_manager.get_banned_users()
+    
+    if not banned_users:
+        update.message.reply_text("✅ No users are currently banned.")
+        return
+    
+    # Format the list of banned users
+    current_time = time.time()
+    banned_list = []
+    
+    for banned_id, ban_info in banned_users.items():
+        # Get username
+        username = chat_manager.user_stats.get(int(banned_id), {}).get("username", "Unknown")
+        
+        # Calculate remaining time
+        remaining_seconds = ban_info["until"] - current_time
+        if remaining_seconds <= 0:
+            remaining_time = "Expired"
+        else:
+            remaining_hours = remaining_seconds / 3600
+            if remaining_hours >= 24:
+                remaining_days = remaining_hours / 24
+                remaining_time = f"{remaining_days:.1f} days"
+            else:
+                remaining_time = f"{remaining_hours:.1f} hours"
+        
+        # Format ban expiry time
+        ban_until = format_datetime(get_localized_time(ban_info["until"]))
+        
+        banned_list.append(
+            f"• {banned_id} ({username})\n"
+            f"  Reason: {ban_info.get('reason', 'Unknown')}\n"
+            f"  Expires: {ban_until}\n"
+            f"  Remaining: {remaining_time}\n"
+        )
+    
+    # Create the message
+    message = f"📋 Banned Users ({len(banned_users)}):\n\n" + "\n".join(banned_list)
+    
+    # Send the message (split if needed)
+    if len(message) <= 4096:
+        update.message.reply_text(message)
+    else:
+        # Split into chunks of max 4000 characters
+        chunks = [message[i:i+4000] for i in range(0, len(message), 4000)]
+        for i, chunk in enumerate(chunks):
+            update.message.reply_text(f"Part {i+1}/{len(chunks)}:\n\n{chunk}")
+
+def admin_bot_analysis(update: Update, context: CallbackContext):
+    """Admin command to show detailed bot analysis including waiting users, active chats, and banned users"""
+    user_id = update.effective_user.id
+    
+    # Check if user is an admin
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized admin_bot_analysis attempt by user {user_id}")
+        return
+    
+    # Get current time for calculations
+    current_time = time.time()
+    
+    # ===== WAITING USERS =====
+    waiting_list = []
+    for waiting_id in chat_manager.waiting_users:
+        username = chat_manager.user_stats.get(waiting_id, {}).get("username", "Unknown")
+        # Calculate waiting time if available
+        if waiting_id in chat_manager.user_stats and "connect_time" in chat_manager.user_stats[waiting_id]:
+            waiting_since = chat_manager.user_stats[waiting_id]["connect_time"]
+            waiting_minutes = (current_time - waiting_since) / 60
+            waiting_list.append(f"• {waiting_id} ({username}) - waiting for {waiting_minutes:.1f} minutes")
+        else:
+            waiting_list.append(f"• {waiting_id} ({username})")
+    
+    # ===== ACTIVE CHATS =====
+    active_chats = {}
+    for user_id, partner_id in chat_manager.active_chats.items():
+        # Only process each pair once
+        if user_id < partner_id:
+            user_name = chat_manager.user_stats.get(user_id, {}).get("username", "Unknown")
+            partner_name = chat_manager.user_stats.get(partner_id, {}).get("username", "Unknown")
+            
+            # Calculate chat duration if available
+            chat_duration = "Unknown"
+            if user_id in chat_manager.user_stats and "connect_time" in chat_manager.user_stats[user_id]:
+                chat_since = chat_manager.user_stats[user_id]["connect_time"]
+                chat_minutes = (current_time - chat_since) / 60
+                if chat_minutes < 60:
+                    chat_duration = f"{chat_minutes:.1f} minutes"
+                else:
+                    chat_hours = chat_minutes / 60
+                    chat_duration = f"{chat_hours:.1f} hours"
+            
+            active_chats[f"{user_id}_{partner_id}"] = (
+                f"• {user_id} ({user_name}) ↔️ {partner_id} ({partner_name})\n"
+                f"  Duration: {chat_duration}"
+            )
+    
+    # ===== BANNED USERS =====
+    banned_list = []
+    banned_users = chat_manager.get_banned_users()
+    
+    for banned_id, ban_info in banned_users.items():
+        username = chat_manager.user_stats.get(int(banned_id), {}).get("username", "Unknown")
+        
+        # Calculate remaining time
+        remaining_seconds = ban_info["until"] - current_time
+        if remaining_seconds <= 0:
+            remaining_time = "Expired"
+        else:
+            remaining_hours = remaining_seconds / 3600
+            if remaining_hours >= 24:
+                remaining_days = remaining_hours / 24
+                remaining_time = f"{remaining_days:.1f} days"
+            else:
+                remaining_time = f"{remaining_hours:.1f} hours"
+        
+        banned_list.append(f"• {banned_id} ({username}) - {remaining_time} remaining")
+    
+    # ===== CREATE REPORT =====
+    report = [
+        "📊 BOT ANALYSIS REPORT 📊",
+        "="*30,
+        "",
+        f"🕓 Report time: {format_datetime(get_localized_time())}",
+        f"⏱️ Bot uptime: {get_uptime()}",
+        "",
+        f"👥 WAITING USERS ({len(waiting_list)}):",
+        "="*20
+    ]
+    
+    if waiting_list:
+        report.extend(waiting_list)
+    else:
+        report.append("No users waiting")
+    
+    report.extend([
+        "",
+        f"🔄 ACTIVE CHATS ({len(active_chats)}):",
+        "="*20
+    ])
+    
+    if active_chats:
+        report.extend(active_chats.values())
+    else:
+        report.append("No active chats")
+    
+    report.extend([
+        "",
+        f"⛔ BANNED USERS ({len(banned_list)}):",
+        "="*20
+    ])
+    
+    if banned_list:
+        report.extend(banned_list)
+    else:
+        report.append("No banned users")
+    
+    # Join all parts of the report
+    full_report = "\n".join(report)
+    
+    # Send the report (split if needed)
+    if len(full_report) <= 4096:
+        update.message.reply_text(full_report)
+    else:
+        # Split into chunks of max 4000 characters
+        chunks = [full_report[i:i+4000] for i in range(0, len(full_report), 4000)]
+        for i, chunk in enumerate(chunks):
+            update.message.reply_text(f"Part {i+1}/{len(chunks)}:\n\n{chunk}")
+    
+    logger.info(f"Bot analysis report generated for admin {user_id}")
+
+def error_handler(update, context):
+    """Log Errors caused by Updates."""
+    logger.error(f"Update {update} caused error {context.error}")
+    
+    try:
+        # Notify user of error
+        if update and update.effective_message:
+            update.effective_message.reply_text(
+                "Sorry, something went wrong. Please try again later."
+            )
+    except:
+        pass
+
 def print_analytics():
+    """Print basic analytics to console every minute"""
     while True:
-        try:
-            stats = chat_manager.get_stats()
-            
-            print("\n" + "="*50)
-            print(f"📊 BOT ANALYTICS - {datetime.datetime.now().strftime('%H:%M:%S ; %d.%m.%Y')}")
-            print(f"🕒 Uptime: {get_uptime()}")
-            print(f"👥 Total Users: {stats['total_users']}")
-            print(f"⏳ Waiting Users: {stats['waiting_users']}")
-            print(f"🔄 Active Chats: {stats['active_chats']}")
-            
-            if stats['active_chats'] > 0:
-                print("\nActive Connections:")
-                for user_id, user_data in stats['user_details'].items():
-                    if user_data['partner']:
-                        partner_id = user_data['partner']
-                        partner_name = stats['user_details'].get(partner_id, {}).get('username', 'Unknown')
-                        user_name = user_data['username'] or 'Unknown'
-                        print(f"  {user_name} (ID: {user_id}) ⟷ {partner_name} (ID: {partner_id})")
-            
-            print("="*50 + "\n")
-            time.sleep(60)  # Update every minute
-        except Exception as e:
-            logger.error(f"Error in analytics thread: {e}")
-            time.sleep(60)  # Continue despite errors
+        stats = chat_manager.get_stats()
+        
+        print("\n==== BOT ANALYTICS ====")
+        print(f"Time: {format_datetime(get_localized_time())}")
+        print(f"Uptime: {get_uptime()}")
+        print(f"Waiting Users: {stats['waiting_users']}")
+        print(f"Active Chats: {stats['active_chats']}")
+        print(f"Total Users: {stats['total_users']}")
+        print(f"Banned Users: {stats['banned_users']}")
+        print("========================\n")
+        
+        time.sleep(60)  # Update every minute
 
-# Function to calculate uptime
 def get_uptime():
-    now = datetime.datetime.now()
-    uptime = now - start_time
-    # Format days, hours, minutes, seconds
-    days, seconds = uptime.days, uptime.seconds
-    hours = seconds // 3600
-    minutes = (seconds % 3600) // 60
-    seconds = seconds % 60
-    return f"{days}d {hours}h {minutes}m {seconds}s"
+    """Get bot uptime in human-readable format"""
+    if start_time:
+        uptime = get_localized_time() - start_time
+        days = uptime.days
+        hours, remainder = divmod(uptime.seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        return f"{days}d {hours}h {minutes}m {seconds}s"
+    return "Unknown"
 
-# Graceful shutdown function
 def stop_bot(signum, frame):
-    stop_time = datetime.datetime.now()
-    uptime = get_uptime()
-    print(f"Bot Stopped at {stop_time.strftime('%H:%M:%S ; %d.%m.%Y')}")
-    print(f"Total Uptime: {uptime}")
+    """Handle signals to stop the bot gracefully"""
+    print("\nStopping bot...")
+    
+    # Save user data before exit
+    chat_manager.save_users_to_file()
+    chat_manager.save_banned_users()
+    
+    print("User data saved. Exiting...")
     exit(0)
 
 # Attach signals to stop the bot gracefully
@@ -444,19 +834,19 @@ signal.signal(signal.SIGINT, stop_bot)   # Ctrl+C
 signal.signal(signal.SIGTERM, stop_bot)  # kill command
 
 # Broadcast command - for admin use only
-async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def broadcast(update: Update, context: CallbackContext):
     """Send a broadcast message to all users who have used the bot"""
     user_id = update.effective_user.id
     
     # Check if user is authorized to broadcast
     if user_id not in ADMIN_IDS:
-        await update.message.reply_text("⛔ You are not authorized to use this command.")
+        update.message.reply_text("⛔ You are not authorized to use this command.")
         logger.warning(f"Unauthorized broadcast attempt by user {user_id}")
         return
     
     # Check if message is provided
     if not context.args:
-        await update.message.reply_text("Usage: /broadcast <message>\n\nSend a message to all users.")
+        update.message.reply_text("Usage: /broadcast <message>\n\nSend a message to all users.")
         return
     
     # Get the message text
@@ -466,11 +856,11 @@ async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
     all_users = list(chat_manager.user_stats.keys())
     
     if not all_users:
-        await update.message.reply_text("No users found in the database.")
+        update.message.reply_text("No users found in the database.")
         return
     
     # Send initial status
-    status_message = await update.message.reply_text(
+    status_message = update.message.reply_text(
         f"📣 Broadcasting to {len(all_users)} users...\n"
         f"0% complete (0/{len(all_users)})"
     )
@@ -479,73 +869,85 @@ async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
     successful = 0
     failed = 0
     
-    # Send the broadcast message to all users
-    for i, user_id in enumerate(all_users):
+    # Send message to each user with progress updates
+    for i, uid in enumerate(all_users):
         try:
-            await context.bot.send_message(
-                user_id,
-                f"📢 *ANNOUNCEMENT*\n\n{message_text}",
-                parse_mode='Markdown'
+            context.bot.send_message(
+                uid, 
+                f"📢 ANNOUNCEMENT from Unknown Chat Bot:\n\n{message_text}"
             )
             successful += 1
         except TelegramError as e:
+            logger.error(f"Failed to broadcast to user {uid}: {e}")
             failed += 1
-            logger.error(f"Failed to send broadcast to user {user_id}: {e}")
         
         # Update status every 10 users or at the end
         if (i + 1) % 10 == 0 or i == len(all_users) - 1:
-            percent_complete = int((i + 1) / len(all_users) * 100)
-            await status_message.edit_text(
-                f"📣 Broadcasting to {len(all_users)} users...\n"
-                f"{percent_complete}% complete ({i+1}/{len(all_users)})\n"
-                f"✅ Successful: {successful}\n"
-                f"❌ Failed: {failed}"
-            )
-            
-            # Small delay to avoid hitting rate limits
-            await asyncio.sleep(0.1)
+            progress = ((i + 1) / len(all_users)) * 100
+            try:
+                context.bot.edit_message_text(
+                    chat_id=status_message.chat_id,
+                    message_id=status_message.message_id,
+                    text=f"📣 Broadcasting to {len(all_users)} users...\n"
+                         f"{progress:.1f}% complete ({i+1}/{len(all_users)})\n"
+                         f"Successful: {successful}\n"
+                         f"Failed: {failed}"
+                )
+            except TelegramError as e:
+                logger.error(f"Failed to update broadcast status: {e}")
     
-    # Final report
-    await update.message.reply_text(
-        f"📣 Broadcast completed!\n"
-        f"✅ Successfully sent: {successful}\n"
-        f"❌ Failed: {failed}"
+    # Final status update
+    update.message.reply_text(
+        f"✅ Broadcast complete!\n"
+        f"Total users: {len(all_users)}\n"
+        f"Successful: {successful}\n"
+        f"Failed: {failed}"
     )
-    
-    logger.info(f"Broadcast completed by admin {user_id}. Successful: {successful}, Failed: {failed}")
+    logger.info(f"Broadcast by admin {user_id} complete. Success: {successful}, Failed: {failed}")
 
 # Main run
 if __name__ == "__main__":
     # Load users from file if available
     chat_manager.load_users_from_file()
     
+    # Load banned users from file if available
+    chat_manager.load_banned_users()
+    
     # Start auto-saving users periodically
     chat_manager.auto_save_users()
+    chat_manager.auto_save_banned_users()
     
     # Set the start time
-    start_time = datetime.datetime.now()
+    start_time = get_localized_time()
     
     # Command handlers
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("chat", chat))
-    app.add_handler(CommandHandler("leave", leave))
-    app.add_handler(CommandHandler("status", status))
-    app.add_handler(CommandHandler("broadcast", broadcast))
+    dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("chat", chat))
+    dispatcher.add_handler(CommandHandler("leave", leave))
+    dispatcher.add_handler(CommandHandler("status", status))
+    dispatcher.add_handler(CommandHandler("broadcast", broadcast))
+    
+    # Admin command handlers
+    dispatcher.add_handler(CommandHandler("ban", admin_ban_user))
+    dispatcher.add_handler(CommandHandler("unban", admin_unban_user))
+    dispatcher.add_handler(CommandHandler("bannedlist", admin_list_banned))
+    dispatcher.add_handler(CommandHandler("endchat", admin_end_chat))
+    dispatcher.add_handler(CommandHandler("bot_analysis", admin_bot_analysis))
     
     # Add error handler
-    app.add_error_handler(error_handler)
+    dispatcher.add_error_handler(error_handler)
     
     # Handle all supported message types
-    app.add_handler(MessageHandler(
-        filters.TEXT | 
-        filters.PHOTO | 
-        filters.VIDEO | 
-        filters.Sticker.ALL | 
-        filters.VIDEO_NOTE | 
-        filters.VOICE | 
-        filters.Document.ALL | 
-        filters.AUDIO | 
-        filters.ANIMATION,
+    dispatcher.add_handler(MessageHandler(
+        Filters.text & ~Filters.command | 
+        Filters.photo | 
+        Filters.video | 
+        Filters.sticker | 
+        Filters.video_note | 
+        Filters.voice | 
+        Filters.document | 
+        Filters.audio | 
+        Filters.animation,
         forward
     ))
     
@@ -555,4 +957,5 @@ if __name__ == "__main__":
     analytics_thread.start()
     
     print("Bot started!")
-    app.run_polling()
+    updater.start_polling()
+    updater.idle()

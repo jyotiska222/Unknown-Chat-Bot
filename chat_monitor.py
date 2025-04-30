@@ -2,7 +2,19 @@ import os
 import json
 import logging
 import datetime
+import pytz
 from typing import Optional, Dict, Any, List
+
+# Set timezone - use UTC for production environments for consistency
+TIMEZONE = pytz.timezone('UTC')  # Change to your timezone if needed, e.g., 'America/New_York'
+
+def get_localized_time():
+    """Get current time in the specified timezone"""
+    return datetime.datetime.now(TIMEZONE)
+
+def format_iso_datetime(dt):
+    """Format datetime object to ISO format with timezone"""
+    return dt.isoformat()
 
 # Configure logger for the monitor
 monitor_logger = logging.getLogger(__name__)
@@ -32,7 +44,7 @@ class ChatMonitor:
     
     def _initialize_day_file(self):
         """Initialize the log file for the current day"""
-        today = datetime.datetime.now().strftime("%Y-%m-%d")
+        today = get_localized_time().strftime("%Y-%m-%d")
         if self.current_day != today:
             self.current_day = today
             self.current_day_file = os.path.join(self.storage_dir, f"chat_logs_{today}.json")
@@ -41,7 +53,7 @@ class ChatMonitor:
             if not os.path.exists(self.current_day_file):
                 with open(self.current_day_file, 'w') as f:
                     json.dump({
-                        "created_at": datetime.datetime.now().isoformat(),
+                        "created_at": format_iso_datetime(get_localized_time()),
                         "chats": {}
                     }, f, indent=2)
                 monitor_logger.info(f"Created new log file: {self.current_day_file}")
@@ -55,7 +67,7 @@ class ChatMonitor:
         except (json.JSONDecodeError, FileNotFoundError):
             # If file is corrupted or doesn't exist, create a new one
             log_data = {
-                "created_at": datetime.datetime.now().isoformat(),
+                "created_at": format_iso_datetime(get_localized_time()),
                 "chats": {}
             }
             with open(self.current_day_file, 'w') as f:
@@ -92,7 +104,7 @@ class ChatMonitor:
         # Generate a unique chat ID from the two user IDs (sorted to keep consistency)
         chat_id = f"{min(user_id, partner_id)}_{max(user_id, partner_id)}"
         
-        timestamp = datetime.datetime.now().isoformat()
+        timestamp = format_iso_datetime(get_localized_time())
         
         message_data = {
             "timestamp": timestamp,
@@ -137,7 +149,7 @@ class ChatMonitor:
         """Log when a chat is started between two users"""
         # Generate a unique chat ID from the two user IDs (sorted to keep consistency)
         chat_id = f"{min(user1_id, user2_id)}_{max(user1_id, user2_id)}"
-        timestamp = datetime.datetime.now().isoformat()
+        timestamp = format_iso_datetime(get_localized_time())
         
         try:
             log_data = self._read_logs()
@@ -163,7 +175,7 @@ class ChatMonitor:
         """Log when a chat ends"""
         # Generate a unique chat ID from the two user IDs (sorted to keep consistency)
         chat_id = f"{min(user_id, partner_id)}_{max(user_id, partner_id)}"
-        timestamp = datetime.datetime.now().isoformat()
+        timestamp = format_iso_datetime(get_localized_time())
         
         try:
             log_data = self._read_logs()
