@@ -230,8 +230,8 @@ def check_match(update: Update, context: CallbackContext):
     
     if user1 and user2:
         try:
-            context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get a more user here: t.me/unknwn_chat_bot")
-            context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get more user here: t.me/unknwn_chat_bot")
+            context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get a more user here.")
+            context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get more user here.")
             
             # Get usernames
             user1_name = chat_manager.user_stats[user1].get("username", "Unknown")
