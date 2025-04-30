@@ -6,13 +6,14 @@ import threading
 import time
 import datetime
 import pytz  # For proper timezone handling
-from telegram import Update
+from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
     Updater,
     CommandHandler, 
     MessageHandler, 
     Filters, 
-    CallbackContext
+    CallbackContext,
+    ConversationHandler
 )
 from telegram.error import TelegramError, Conflict
 from config import BOT_TOKEN
@@ -26,8 +27,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Define conversation states
+GENDER, INTEREST, MATCHING = range(3)
+
 # Admin IDs who are allowed to use broadcast
-ADMIN_IDS = [2023022792]  # Admin user ID
+ADMIN_IDS = [2023022792, 6261300717]  # Admin user IDs
 
 # Initialize the updater and dispatcher
 updater = Updater(token=BOT_TOKEN)
@@ -37,7 +41,7 @@ dispatcher = updater.dispatcher
 start_time = None
 
 # Set timezone - use UTC for production environments for consistency
-TIMEZONE = pytz.timezone('UTC')  # Change to your timezone if needed, e.g., 'America/New_York'
+TIMEZONE = pytz.timezone('Asia/Kolkata')  # Indian Standard Time (IST)
 
 def get_localized_time(timestamp=None):
     """Get timezone-aware datetime object or convert timestamp to local time"""
@@ -84,7 +88,7 @@ def start(update: Update, context: CallbackContext):
         "You can send text, photos, videos, stickers, and video messages!"
     )
 
-# /chat command
+# /chat command updated to start preference conversation
 def chat(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     username = update.effective_user.username or update.effective_user.first_name
@@ -98,7 +102,7 @@ def chat(update: Update, context: CallbackContext):
             f"Reason: {ban_info['reason']}\n"
             f"Ban expires: {ban_duration}"
         )
-        return
+        return ConversationHandler.END
     
     # Leave current chat if exists
     if chat_manager.is_chatting(user_id):
@@ -114,14 +118,120 @@ def chat(update: Update, context: CallbackContext):
     # Remove from waiting queue if already in it
     chat_manager.remove_from_queue(user_id)
     
-    # Add to queue
-    chat_manager.add_to_queue(user_id, username)
+    # Check if the user already has gender and interest info
+    user_info = chat_manager.user_stats.get(user_id, {})
+    has_gender = "gender" in user_info and user_info["gender"] is not None
+    has_interest = "interest" in user_info and user_info["interest"] is not None
     
+    if has_gender and has_interest:
+        # User already has preferences set, add them to queue
+        gender = user_info["gender"]
+        interest = user_info["interest"]
+        chat_manager.add_to_queue(user_id, username, gender, interest)
+        update.message.reply_text(
+            # f"📝 Your preferences:\n"
+            # f"Gender: {format_gender(gender)}\n"
+            # f"Interested in: {format_gender(interest)}\n\n"
+            f"🔎 Looking for a partner... Please wait."
+        )
+        logger.info(f"User {user_id} ({username}) waiting for a partner with preferences: gender={gender}, interest={interest}")
+        return check_match(update, context)
+    else:
+        # Ask for gender first
+        reply_keyboard = [['M', 'F', 'O']]
+        update.message.reply_text(
+            '📝 Please select your gender:\n\n'
+            'M - Male ♂️\n'
+            'F - Female ♀️\n'
+            'O - Other ⚧️\n\n'
+            'This will help us to improve your experience in this bot 🤖',
+            reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+        )
+        return GENDER
+
+def gender_selection(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    gender = update.message.text.upper()
+    
+    if gender not in ['M', 'F', 'O']:
+        update.message.reply_text(
+            '⚠️ Please select a valid option:\n\n'
+            'M - Male ♂️\n'
+            'F - Female ♀️\n'
+            'O - Other ⚧️\n\n'
+            'This will help us to improve your experience in this bot 🤖'
+        )
+        return GENDER
+    
+    # Save gender to context for later use
+    context.user_data['gender'] = gender
+    
+    # Ask for interest next
+    reply_keyboard = [['M', 'F', 'O']]
+    update.message.reply_text(
+        '📝 Please select who you want to chat with:\n\n'
+        'M - Male ♂️\n'
+        'F - Female ♀️\n'
+        'O - Other/Anyone 🤖\n\n'
+        'This will help us to improve your experience in this bot 🤖',
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+    )
+    return INTEREST
+
+def interest_selection(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    username = update.effective_user.username or update.effective_user.first_name
+    interest = update.message.text.upper()
+    
+    if interest not in ['M', 'F', 'O']:
+        update.message.reply_text(
+            '⚠️ Please select a valid option:\n\n'
+            'M - Male ♂️\n'
+            'F - Female ♀️\n'
+            'O - Other/Anyone 🤖\n\n'
+            'This will help us to improve your experience in this bot 🤖',
+        )
+        return INTEREST
+    
+    # Get gender from context
+    gender = context.user_data.get('gender')
+    
+    # Add user to queue with preferences
+    chat_manager.add_to_queue(user_id, username, gender, interest)
+    
+    # Remove keyboard and confirm preferences
+    update.message.reply_text(
+        # f"📝 Your preferences have been saved:\n"
+        # f"Gender: {format_gender(gender)}\n"
+        # f"Interested in: {format_gender(interest)}\n\n"
+        f"🔎 Looking for a partner... Please wait.",
+        reply_markup=ReplyKeyboardRemove()
+    )
+    
+    logger.info(f"User {user_id} ({username}) waiting for a partner with preferences: gender={gender}, interest={interest}")
+    
+    return check_match(update, context)
+
+def format_gender(code):
+    """Convert gender code to readable format"""
+    if code == 'M':
+        return 'Male'
+    elif code == 'F':
+        return 'Female'
+    else:
+        return 'Other'
+
+def check_match(update: Update, context: CallbackContext):
+    """Check if a match is available and connect users"""
+    user_id = update.effective_user.id
+    
+    # Try to match users (this doesn't consider preferences as requested)
     user1, user2 = chat_manager.match_users()
+    
     if user1 and user2:
         try:
-            context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi!")
-            context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi!")
+            context.bot.send_message(user1, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get a better user experience: https://t.me/unknwn_chat_bot")
+            context.bot.send_message(user2, "🎉 Connected to a stranger. Say hi! 💬\n\nType /leave to end this chat.\nType /chat to find a new partner.\n\n💫 Share our bot to get a better user experience: https://t.me/unknwn_chat_bot")
             
             # Get usernames
             user1_name = chat_manager.user_stats[user1].get("username", "Unknown")
@@ -135,11 +245,20 @@ def chat(update: Update, context: CallbackContext):
             logger.error(f"Failed to notify matched users: {e}")
             # If we failed to notify, undo the match
             chat_manager.leave_chat(user1)
-            chat_manager.add_to_queue(user1, chat_manager.user_stats[user1].get("username"))
-            chat_manager.add_to_queue(user2, chat_manager.user_stats[user2].get("username"))
-    else:
-        update.message.reply_text("🔎 Looking for a partner... Please wait.")
-        logger.info(f"User {user_id} ({username}) waiting for a partner")
+            chat_manager.add_to_queue(
+                user1, 
+                chat_manager.user_stats[user1].get("username"),
+                chat_manager.user_stats[user1].get("gender"),
+                chat_manager.user_stats[user1].get("interest")
+            )
+            chat_manager.add_to_queue(
+                user2, 
+                chat_manager.user_stats[user2].get("username"),
+                chat_manager.user_stats[user2].get("gender"),
+                chat_manager.user_stats[user2].get("interest")
+            )
+    
+    return ConversationHandler.END
 
 # /leave command
 def leave(update: Update, context: CallbackContext):
@@ -673,13 +792,22 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
     waiting_list = []
     for waiting_id in chat_manager.waiting_users:
         username = chat_manager.user_stats.get(waiting_id, {}).get("username", "Unknown")
+        gender = chat_manager.user_stats.get(waiting_id, {}).get("gender", "?")
+        interest = chat_manager.user_stats.get(waiting_id, {}).get("interest", "?")
+        
         # Calculate waiting time if available
         if waiting_id in chat_manager.user_stats and "connect_time" in chat_manager.user_stats[waiting_id]:
             waiting_since = chat_manager.user_stats[waiting_id]["connect_time"]
             waiting_minutes = (current_time - waiting_since) / 60
-            waiting_list.append(f"• {waiting_id} ({username}) - waiting for {waiting_minutes:.1f} minutes")
+            waiting_list.append(
+                f"• {waiting_id} ({username}) - waiting for {waiting_minutes:.1f} minutes\n"
+                f"  Gender: {format_gender(gender)}, Interested in: {format_gender(interest)}"
+            )
         else:
-            waiting_list.append(f"• {waiting_id} ({username})")
+            waiting_list.append(
+                f"• {waiting_id} ({username})\n"
+                f"  Gender: {format_gender(gender)}, Interested in: {format_gender(interest)}"
+            )
     
     # ===== ACTIVE CHATS =====
     active_chats = {}
@@ -688,6 +816,12 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
         if user_id < partner_id:
             user_name = chat_manager.user_stats.get(user_id, {}).get("username", "Unknown")
             partner_name = chat_manager.user_stats.get(partner_id, {}).get("username", "Unknown")
+            
+            # Get gender and interest info
+            user_gender = chat_manager.user_stats.get(user_id, {}).get("gender", "?")
+            user_interest = chat_manager.user_stats.get(user_id, {}).get("interest", "?")
+            partner_gender = chat_manager.user_stats.get(partner_id, {}).get("gender", "?")
+            partner_interest = chat_manager.user_stats.get(partner_id, {}).get("interest", "?")
             
             # Calculate chat duration if available
             chat_duration = "Unknown"
@@ -702,7 +836,9 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
             
             active_chats[f"{user_id}_{partner_id}"] = (
                 f"• {user_id} ({user_name}) ↔️ {partner_id} ({partner_name})\n"
-                f"  Duration: {chat_duration}"
+                f"  Duration: {chat_duration}\n"
+                f"  User 1: Gender {format_gender(user_gender)}, Interest: {format_gender(user_interest)}\n"
+                f"  User 2: Gender {format_gender(partner_gender)}, Interest: {format_gender(partner_interest)}"
             )
     
     # ===== BANNED USERS =====
@@ -711,6 +847,8 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
     
     for banned_id, ban_info in banned_users.items():
         username = chat_manager.user_stats.get(int(banned_id), {}).get("username", "Unknown")
+        gender = chat_manager.user_stats.get(int(banned_id), {}).get("gender", "?")
+        interest = chat_manager.user_stats.get(int(banned_id), {}).get("interest", "?")
         
         # Calculate remaining time
         remaining_seconds = ban_info["until"] - current_time
@@ -724,7 +862,10 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
             else:
                 remaining_time = f"{remaining_hours:.1f} hours"
         
-        banned_list.append(f"• {banned_id} ({username}) - {remaining_time} remaining")
+        banned_list.append(
+            f"• {banned_id} ({username}) - {remaining_time} remaining\n"
+            f"  Gender: {format_gender(gender)}, Interest: {format_gender(interest)}"
+        )
     
     # ===== CREATE REPORT =====
     report = [
@@ -920,9 +1061,20 @@ if __name__ == "__main__":
     # Set the start time
     start_time = get_localized_time()
     
+    # Create the conversation handler for chat preferences
+    chat_conv_handler = ConversationHandler(
+        entry_points=[CommandHandler('chat', chat)],
+        states={
+            GENDER: [MessageHandler(Filters.text & ~Filters.command, gender_selection)],
+            INTEREST: [MessageHandler(Filters.text & ~Filters.command, interest_selection)],
+            MATCHING: [MessageHandler(Filters.text & ~Filters.command, check_match)]
+        },
+        fallbacks=[CommandHandler('leave', leave)]
+    )
+    
     # Command handlers
     dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(CommandHandler("chat", chat))
+    dispatcher.add_handler(chat_conv_handler)  # Use the conversation handler instead of a simple command
     dispatcher.add_handler(CommandHandler("leave", leave))
     dispatcher.add_handler(CommandHandler("status", status))
     dispatcher.add_handler(CommandHandler("broadcast", broadcast))

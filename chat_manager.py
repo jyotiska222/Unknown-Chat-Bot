@@ -20,17 +20,36 @@ def datetime_to_timestamp(dt):
 
 waiting_users = deque()  # Changed to deque for efficient pop operations
 active_chats = {}  # {user_id: partner_id}
-user_stats = {}  # {user_id: {"connect_time": timestamp, "username": username, "partner": partner_id}}
+user_stats = {}  # {user_id: {"connect_time": timestamp, "username": username, "partner": partner_id, "gender": gender, "interest": interest}}
 banned_users = {}  # {user_id: {"until": timestamp, "reason": reason}}
 
-def add_to_queue(user_id, username=None):
+def add_to_queue(user_id, username=None, gender=None, interest=None):
     # Check if user is banned
     if is_banned(user_id):
         return False
         
     if user_id not in waiting_users and user_id not in active_chats:
         waiting_users.append(user_id)
-        user_stats[user_id] = {"username": username, "partner": None, "connect_time": time.time()}
+        
+        # If user already exists in user_stats, update fields but don't overwrite existing ones
+        if user_id in user_stats:
+            user_stats[user_id]["partner"] = None
+            user_stats[user_id]["connect_time"] = time.time()
+            if username:
+                user_stats[user_id]["username"] = username
+            if gender is not None:
+                user_stats[user_id]["gender"] = gender
+            if interest is not None:
+                user_stats[user_id]["interest"] = interest
+        else:
+            # Create new user entry
+            user_stats[user_id] = {
+                "username": username, 
+                "partner": None, 
+                "connect_time": time.time(),
+                "gender": gender,
+                "interest": interest
+            }
         return True
     return False
 
@@ -66,13 +85,6 @@ def leave_chat(user_id):
             
         return partner
     return None
-
-def admin_end_chat(user_id, reason="admin_ended"):
-    """
-    End a chat as an admin with a specific reason.
-    Returns the partner's user_id if successful, None otherwise.
-    """
-    return leave_chat(user_id)
 
 def is_chatting(user_id):
     return user_id in active_chats

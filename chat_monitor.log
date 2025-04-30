@@ -377,3 +377,59 @@
 2025-04-30 17:49:15,406 - chat_monitor - INFO - Logged text message from 6261300717 to 2023022792
 2025-04-30 17:52:27,481 - chat_monitor - INFO - Chat ended between 6261300717 and 2023022792, reason: admin_action: suspicious behaviour
 2025-04-30 18:14:54,021 - chat_monitor - INFO - Chat started between 6261300717 and 2023022792
+2025-04-30 19:14:01,418 - chat_monitor - INFO - Chat started between 6261300717 and 7988565300
+2025-04-30 19:14:04,318 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:14:11,723 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:17:17,530 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:17:25,033 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:17:25,764 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:17:53,686 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:18:00,092 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:01,484 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:03,788 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:14,241 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:18:19,165 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:30,426 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:44,063 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:18:48,174 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:56,332 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:18:56,974 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:02,804 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:19:10,105 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:16,560 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:19:16,988 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:21,545 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:23,646 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:19:29,180 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:19:29,963 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:37,962 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:19:41,592 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:19:53,175 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:20:01,041 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:20:05,835 - chat_monitor - INFO - Logged text message from 7988565300 to 6261300717
+2025-04-30 19:20:07,175 - chat_monitor - INFO - Chat ended between 6261300717 and 7988565300, reason: manual
+2025-04-30 19:20:56,682 - chat_monitor - INFO - Chat started between 7988565300 and 2023022792
+2025-04-30 19:20:59,273 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:21:04,612 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:07,846 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:15,600 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:21:37,507 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:21:38,475 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:41,554 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:43,759 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:47,347 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:21:56,084 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:56,807 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:21:57,907 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:22:06,685 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:22:12,157 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:22:18,924 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:22:25,247 - chat_monitor - INFO - Logged text message from 2023022792 to 7988565300
+2025-04-30 19:22:30,936 - chat_monitor - INFO - Logged text message from 7988565300 to 2023022792
+2025-04-30 19:22:46,883 - chat_monitor - INFO - Chat ended between 2023022792 and 7988565300, reason: manual
+2025-04-30 19:23:04,559 - chat_monitor - INFO - Chat started between 2023022792 and 7988565300
+2025-04-30 19:23:07,727 - chat_monitor - INFO - Chat ended between 2023022792 and 7988565300, reason: manual
+2025-04-30 19:32:53,285 - chat_monitor - INFO - Chat started between 7988565300 and 6261300717
+2025-04-30 19:33:00,511 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-04-30 19:45:03,135 - chat_monitor - INFO - Chat started between 6261300717 and 2023022792
+2025-04-30 19:45:39,966 - chat_monitor - INFO - Chat ended between 2023022792 and 6261300717, reason: manual

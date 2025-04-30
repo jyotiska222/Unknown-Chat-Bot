@@ -26,18 +26,11 @@
           "username": "Abbaaaz9"
         }
       ],
-      "started_at": "2025-04-30T05:05:05.471831",
-      "messages": [
-        {
-          "timestamp": "2025-04-30T05:05:52.440040",
-          "sender_id": 7988565300,
-          "sender_username": "Abbaaaz9",
-          "receiver_id": 2023022792,
-          "receiver_username": "moyemoye0011",
-          "message_type": "text",
-          "content": "Hi"
-        }
-      ]
+      "started_at": "2025-04-30T13:53:04.547113+00:00",
+      "messages": [],
+      "ended_at": "2025-04-30T13:53:07.717954+00:00",
+      "end_reason": "manual",
+      "ended_by": 2023022792
     },
     "5448598837_6674830074": {
       "users": [
@@ -1719,8 +1712,35 @@
           "username": "moyemoye0011"
         }
       ],
-      "started_at": "2025-04-30T12:44:53.995090+00:00",
-      "messages": []
+      "started_at": "2025-04-30T14:15:03.118209+00:00",
+      "messages": [],
+      "ended_at": "2025-04-30T14:15:39.954106+00:00",
+      "end_reason": "manual",
+      "ended_by": 2023022792
+    },
+    "6261300717_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T14:02:53.264686+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T14:03:00.500950+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ]
     }
   }
 }

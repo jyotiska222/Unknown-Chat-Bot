@@ -95,6 +95,20 @@ Available actions:
 - `search-user` - Search for user activity
 - `flag-content` - Flag potentially inappropriate content
 
+## Features
+
+### User Matching
+
+When a user starts a chat with the `/chat` command:
+
+1. The bot will ask for their gender (Male, Female, or Other)
+2. The bot will ask for their interest (Male, Female, or Other/Anyone)
+3. This information is saved to their user profile
+4. When they use `/chat` again in the future, their preferences will be remembered
+5. New users are automatically asked for these preferences before being matched
+
+Note: While the preferences are collected and stored, they do not affect the matching algorithm.
+
 ## Admin Commands (in Telegram)
 
 Once your bot is running, you can use these admin commands on Telegram:
