@@ -1,0 +1,189 @@
+{
+  "created_at": "2025-05-07T02:03:30.222339+00:00",
+  "chats": {
+    "5511806765_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-05-07T13:33:38.813420+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-07T13:33:44.601414+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-07T13:33:45.061796+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-05-07T13:34:19.100610+00:00",
+      "end_reason": "manual",
+      "ended_by": 6695313832
+    },
+    "7191940637_8036287362": {
+      "users": [
+        {
+          "id": 7191940637,
+          "username": "Karthik"
+        },
+        {
+          "id": 8036287362,
+          "username": "Sim90175"
+        }
+      ],
+      "started_at": "2025-05-07T05:40:00.101774+00:00",
+      "messages": [],
+      "ended_at": "2025-05-07T06:09:31.934116+00:00",
+      "end_reason": "manual",
+      "ended_by": 8036287362
+    },
+    "6291319404_7191940637": {
+      "users": [
+        {
+          "id": 6291319404,
+          "username": "Selenophile"
+        },
+        {
+          "id": 7191940637,
+          "username": "Karthik"
+        }
+      ],
+      "started_at": "2025-05-07T09:17:47.508703+00:00",
+      "messages": []
+    },
+    "6261300717_6688790694": {
+      "users": [
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-05-07T09:56:22.450830+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-07T09:56:28.464489+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hii"
+        }
+      ],
+      "ended_at": "2025-05-07T18:17:59.204199+00:00",
+      "end_reason": "manual",
+      "ended_by": 6688790694
+    },
+    "5511806765_7191940637": {
+      "users": [
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        },
+        {
+          "id": 7191940637,
+          "username": "Karthik"
+        }
+      ],
+      "started_at": "2025-05-07T15:41:47.925318+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-07T15:41:52.192463+00:00",
+          "sender_id": 7191940637,
+          "sender_username": "Karthik",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-07T15:42:33.934117+00:00",
+      "end_reason": "started_new",
+      "ended_by": 7191940637
+    },
+    "1619752182_7191940637": {
+      "users": [
+        {
+          "id": 7191940637,
+          "username": "Karthik"
+        },
+        {
+          "id": 1619752182,
+          "username": "Heyyuuuiiii"
+        }
+      ],
+      "started_at": "2025-05-07T17:59:02.541209+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-07T17:59:12.910785+00:00",
+          "sender_id": 1619752182,
+          "sender_username": "Heyyuuuiiii",
+          "receiver_id": 7191940637,
+          "receiver_username": "Karthik",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-05-07T17:59:54.294889+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1619752182
+    },
+    "1619752182_6261300717": {
+      "users": [
+        {
+          "id": 1619752182,
+          "username": "Heyyuuuiiii"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-07T18:50:10.544146+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-07T18:50:14.158593+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1619752182,
+          "receiver_username": "Heyyuuuiiii",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-07T18:50:17.078090+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1619752182,
+          "receiver_username": "Heyyuuuiiii",
+          "message_type": "text",
+          "content": "F here"
+        }
+      ],
+      "ended_at": "2025-05-07T18:50:18.894790+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    }
+  }
+}

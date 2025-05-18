@@ -4,16 +4,110 @@
     "997570281_7493001547": {
       "users": [
         {
-          "id": 997570281,
-          "username": "Kokes102k"
-        },
-        {
           "id": 7493001547,
           "username": "Agjk012"
+        },
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
         }
       ],
-      "started_at": "2025-04-30T02:41:40.050544",
-      "messages": []
+      "started_at": "2025-04-30T20:12:58.851485+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T20:13:05.619531+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7493001547,
+          "receiver_username": "Agjk012",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:06.249147+00:00",
+          "sender_id": 7493001547,
+          "sender_username": "Agjk012",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "hi"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:07.944323+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7493001547,
+          "receiver_username": "Agjk012",
+          "message_type": "text",
+          "content": "Name!"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:09.910878+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7493001547,
+          "receiver_username": "Agjk012",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:11.607473+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7493001547,
+          "receiver_username": "Agjk012",
+          "message_type": "text",
+          "content": "Age?"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:14.359636+00:00",
+          "sender_id": 7493001547,
+          "sender_username": "Agjk012",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Ali"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:20.182584+00:00",
+          "sender_id": 7493001547,
+          "sender_username": "Agjk012",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Bangladesh"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:21.575567+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7493001547,
+          "receiver_username": "Agjk012",
+          "message_type": "text",
+          "content": "Chele naki meye"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:25.895799+00:00",
+          "sender_id": 7493001547,
+          "sender_username": "Agjk012",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "28"
+        },
+        {
+          "timestamp": "2025-04-30T20:13:29.491517+00:00",
+          "sender_id": 7493001547,
+          "sender_username": "Agjk012",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Chele"
+        }
+      ],
+      "ended_at": "2025-04-30T20:13:33.291766+00:00",
+      "end_reason": "started_new",
+      "ended_by": 997570281
     },
     "2023022792_7988565300": {
       "users": [
@@ -1712,11 +1806,21 @@
           "username": "moyemoye0011"
         }
       ],
-      "started_at": "2025-04-30T14:15:03.118209+00:00",
-      "messages": [],
-      "ended_at": "2025-04-30T14:15:39.954106+00:00",
+      "started_at": "2025-04-30T14:51:45.345530+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T14:52:20.791117+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 2023022792,
+          "receiver_username": "moyemoye0011",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-04-30T14:59:16.284917+00:00",
       "end_reason": "manual",
-      "ended_by": 2023022792
+      "ended_by": 6261300717
     },
     "6261300717_7988565300": {
       "users": [
@@ -1741,6 +1845,1444 @@
           "content": "Hi"
         }
       ]
+    },
+    "5448598837_6261300717": {
+      "users": [
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T15:13:37.205482+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T15:13:42.291811+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T15:13:47.603434+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T15:13:51.695028+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-04-30T15:14:05.868526+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Santosnigdho"
+        },
+        {
+          "timestamp": "2025-04-30T15:14:15.932457+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "M ?"
+        },
+        {
+          "timestamp": "2025-04-30T15:14:27.034554+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Yes"
+        },
+        {
+          "timestamp": "2025-04-30T15:14:32.351165+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U?"
+        }
+      ],
+      "ended_at": "2025-04-30T15:14:33.642519+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "1437726359_6261300717": {
+      "users": [
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        },
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        }
+      ],
+      "started_at": "2025-04-30T15:27:04.098935+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T15:27:06.418124+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T15:27:30.944069+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-04-30T15:28:23.285241+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Horny male here only for sex chat, if you do share, share blurr faced photo"
+        }
+      ],
+      "ended_at": "2025-04-30T16:03:14.904900+00:00",
+      "end_reason": "manual",
+      "ended_by": 1437726359
+    },
+    "1437726359_5799548923": {
+      "users": [
+        {
+          "id": 5799548923,
+          "username": "itzdevilking143"
+        },
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        }
+      ],
+      "started_at": "2025-04-30T16:03:17.195142+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T16:03:20.042705+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T17:35:25.097972+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5799548923,
+          "receiver_username": "itzdevilking143",
+          "message_type": "text",
+          "content": "Yes"
+        }
+      ],
+      "ended_at": "2025-04-30T17:35:33.584537+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1437726359
+    },
+    "1437726359_6674830074": {
+      "users": [
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        },
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        }
+      ],
+      "started_at": "2025-04-30T17:35:49.226120+00:00",
+      "messages": [],
+      "ended_at": "2025-04-30T17:35:52.988402+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6674830074
+    },
+    "5511806765_6674830074": {
+      "users": [
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        },
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        }
+      ],
+      "started_at": "2025-04-30T17:36:21.583218+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T17:36:23.765466+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:25.136175+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6674830074,
+          "receiver_username": "CJha0",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:40.330214+00:00",
+          "sender_id": 6674830074,
+          "sender_username": "CJha0",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "M here"
+        }
+      ],
+      "ended_at": "2025-04-30T17:36:47.492376+00:00",
+      "end_reason": "manual",
+      "ended_by": 5511806765
+    },
+    "5326179528_6261300717": {
+      "users": [
+        {
+          "id": 5326179528,
+          "username": "Petarrr9"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T17:36:31.259634+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T17:36:34.634285+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:35.156029+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:42.053437+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "How are you"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:47.781561+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "Nice"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:49.784278+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "U ?"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:54.129140+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Good"
+        },
+        {
+          "timestamp": "2025-04-30T17:36:59.091204+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:03.922853+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Bulgaria"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:06.545207+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:14.029404+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "M or f ?"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:17.998823+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:21.192799+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:29.800615+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Good"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:34.729502+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Where are you from"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:45.627815+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "Us"
+        },
+        {
+          "timestamp": "2025-04-30T17:37:56.892547+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "How old are you"
+        },
+        {
+          "timestamp": "2025-04-30T17:38:01.551917+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "20"
+        }
+      ],
+      "ended_at": "2025-04-30T17:38:09.952640+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "5511806765_6261300717": {
+      "users": [
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T18:18:44.646018+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T18:18:46.974536+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T18:18:52.103613+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "F"
+        }
+      ],
+      "ended_at": "2025-04-30T18:18:54.021302+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "1383323644_6261300717": {
+      "users": [
+        {
+          "id": 1383323644,
+          "username": "sayan450"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T17:49:24.046322+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T17:49:27.340234+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "M or f"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:33.174183+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:36.616670+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:41.243632+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Ooh"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:45.568520+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:46.541957+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Where are you from"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:51.118031+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "US"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:51.731733+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Kolkata"
+        },
+        {
+          "timestamp": "2025-04-30T17:49:56.607274+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Ooh"
+        },
+        {
+          "timestamp": "2025-04-30T17:50:01.637079+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Age?"
+        }
+      ],
+      "ended_at": "2025-04-30T17:50:23.282085+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1383323644
+    },
+    "1383323644_5511806765": {
+      "users": [
+        {
+          "id": 1383323644,
+          "username": "sayan450"
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-04-30T17:51:00.691751+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T17:51:03.023537+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T17:51:04.111636+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T17:51:05.135004+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-04-30T17:51:08.787708+00:00",
+      "end_reason": "manual",
+      "ended_by": 1383323644
+    },
+    "888913997_5511806765": {
+      "users": [
+        {
+          "id": 888913997,
+          "username": "Asi_asif"
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-04-30T18:00:42.571103+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T18:00:45.192481+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T18:00:45.675255+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-04-30T18:00:51.225684+00:00",
+      "end_reason": "manual",
+      "ended_by": 888913997
+    },
+    "888913997_6261300717": {
+      "users": [
+        {
+          "id": 888913997,
+          "username": "Asi_asif"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T18:01:57.868059+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T18:02:01.289125+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:03.329876+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:08.411681+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:10.301420+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M here and u"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:14.370033+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:18.928338+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Kerala"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:24.011397+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U from"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:31.774265+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "US"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:38.074931+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Nice"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:44.754710+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "Do you know any female ?"
+        },
+        {
+          "timestamp": "2025-04-30T18:02:48.072567+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U good name"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:06.228522+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "?"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:08.101397+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "No dear I have only find you"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:08.403473+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "?"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:20.713429+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "In personal"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:29.964944+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Personal i know"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:38.541588+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Why"
+        },
+        {
+          "timestamp": "2025-04-30T18:03:52.796794+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "If you can add 3 female here I will this bot will give you premium for 3 days"
+        },
+        {
+          "timestamp": "2025-04-30T18:04:14.209653+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "No thanks"
+        },
+        {
+          "timestamp": "2025-04-30T18:05:03.443020+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Anything else ?"
+        },
+        {
+          "timestamp": "2025-04-30T18:06:07.273554+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U left ?"
+        },
+        {
+          "timestamp": "2025-04-30T18:06:30.057374+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 888913997,
+          "receiver_username": "Asi_asif",
+          "message_type": "text",
+          "content": "No"
+        }
+      ],
+      "ended_at": "2025-04-30T18:06:34.439342+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "888913997_1107568227": {
+      "users": [
+        {
+          "id": 1107568227,
+          "username": "Ar68599"
+        },
+        {
+          "id": 888913997,
+          "username": "Asi_asif"
+        }
+      ],
+      "started_at": "2025-04-30T18:07:34.939059+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T18:07:37.949060+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 1107568227,
+          "receiver_username": "Ar68599",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T18:07:44.689345+00:00",
+          "sender_id": 888913997,
+          "sender_username": "Asi_asif",
+          "receiver_id": 1107568227,
+          "receiver_username": "Ar68599",
+          "message_type": "text",
+          "content": "m here"
+        }
+      ],
+      "ended_at": "2025-04-30T18:15:52.349959+00:00",
+      "end_reason": "manual",
+      "ended_by": 888913997
+    },
+    "5326179528_6688790694": {
+      "users": [
+        {
+          "id": 5326179528,
+          "username": "Petarrr9"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-04-30T19:14:11.731492+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T19:14:18.279740+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T19:14:28.323945+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T19:14:45.147275+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "M or f?"
+        },
+        {
+          "timestamp": "2025-04-30T19:14:52.540159+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T19:15:02.305296+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-04-30T19:15:15.519964+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "M from Howrah"
+        }
+      ],
+      "ended_at": "2025-04-30T19:15:29.107437+00:00",
+      "end_reason": "manual",
+      "ended_by": 5326179528
+    },
+    "6409611144_6688790694": {
+      "users": [
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        },
+        {
+          "id": 6409611144,
+          "username": "Anurag"
+        }
+      ],
+      "started_at": "2025-04-30T18:58:29.210313+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T18:58:38.622410+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Hey"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:14.246890+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:20.127584+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "M or f?"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:24.571636+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Male"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:31.137725+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "What about you?"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:34.617712+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:41.631312+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:48.293790+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Did you click on Female?"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:50.454156+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Kolkata"
+        },
+        {
+          "timestamp": "2025-04-30T18:59:54.702576+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "You??"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:00.791950+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Howrah"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:13.878643+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Bengali? Hindi?"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:23.681542+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Bengali"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:31.202873+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Ooo"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:41.675238+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Champions league?"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:43.433772+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "You?"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:46.638927+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Watching?"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:55.071384+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "No brother"
+        },
+        {
+          "timestamp": "2025-04-30T19:00:56.214203+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Anyone"
+        },
+        {
+          "timestamp": "2025-04-30T19:01:19.557825+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Incest valo lage?"
+        },
+        {
+          "timestamp": "2025-04-30T19:01:37.473116+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Nahi"
+        },
+        {
+          "timestamp": "2025-04-30T19:01:42.715409+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-04-30T19:01:50.162571+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Aise q puch raha?"
+        },
+        {
+          "timestamp": "2025-04-30T19:02:07.764181+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6409611144,
+          "receiver_username": "Anurag",
+          "message_type": "text",
+          "content": "Mereko pasand hai"
+        },
+        {
+          "timestamp": "2025-04-30T19:02:13.420640+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "acha"
+        },
+        {
+          "timestamp": "2025-04-30T19:02:19.498210+00:00",
+          "sender_id": 6409611144,
+          "sender_username": "Anurag",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Tu kiski leta hai?"
+        }
+      ],
+      "ended_at": "2025-04-30T19:02:34.293921+00:00",
+      "end_reason": "manual",
+      "ended_by": 6409611144
+    },
+    "997570281_6261300717": {
+      "users": [
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-04-30T19:55:03.880569+00:00",
+      "messages": [],
+      "ended_at": "2025-04-30T19:55:14.587834+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "997570281_7942499859": {
+      "users": [
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        },
+        {
+          "id": 7942499859,
+          "username": "Xjkdorkrkrkdo"
+        }
+      ],
+      "started_at": "2025-04-30T22:03:21.184422+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T22:03:25.214998+00:00",
+          "sender_id": 7942499859,
+          "sender_username": "Xjkdorkrkrkdo",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-04-30T22:03:38.444822+00:00",
+          "sender_id": 7942499859,
+          "sender_username": "Xjkdorkrkrkdo",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Monika here"
+        },
+        {
+          "timestamp": "2025-04-30T22:03:47.517104+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7942499859,
+          "receiver_username": "Xjkdorkrkrkdo",
+          "message_type": "text",
+          "content": "Bengali?"
+        },
+        {
+          "timestamp": "2025-04-30T22:03:51.434381+00:00",
+          "sender_id": 7942499859,
+          "sender_username": "Xjkdorkrkrkdo",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Yes"
+        },
+        {
+          "timestamp": "2025-04-30T22:03:55.865605+00:00",
+          "sender_id": 7942499859,
+          "sender_username": "Xjkdorkrkrkdo",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Tumi"
+        },
+        {
+          "timestamp": "2025-04-30T22:04:00.483153+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7942499859,
+          "receiver_username": "Xjkdorkrkrkdo",
+          "message_type": "text",
+          "content": "Smio"
+        },
+        {
+          "timestamp": "2025-04-30T22:04:02.699507+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7942499859,
+          "receiver_username": "Xjkdorkrkrkdo",
+          "message_type": "text",
+          "content": "Kothay thako"
+        },
+        {
+          "timestamp": "2025-04-30T22:04:10.029296+00:00",
+          "sender_id": 7942499859,
+          "sender_username": "Xjkdorkrkrkdo",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Tomar naam"
+        },
+        {
+          "timestamp": "2025-04-30T22:04:21.316076+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7942499859,
+          "receiver_username": "Xjkdorkrkrkdo",
+          "message_type": "text",
+          "content": "Arnab"
+        }
+      ],
+      "ended_at": "2025-04-30T22:04:32.723517+00:00",
+      "end_reason": "manual",
+      "ended_by": 7942499859
+    },
+    "7942499859_7988565300": {
+      "users": [
+        {
+          "id": 7942499859,
+          "username": "Xjkdorkrkrkdo"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-04-30T22:41:57.828183+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T22:42:03.506478+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7942499859,
+          "receiver_username": "Xjkdorkrkrkdo",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-04-30T22:43:26.984769+00:00",
+      "end_reason": "started_new",
+      "ended_by": 7988565300
+    },
+    "7272509249_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 7272509249,
+          "username": "Aditya"
+        }
+      ],
+      "started_at": "2025-04-30T23:58:27.349457+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-04-30T23:58:32.180099+00:00",
+          "sender_id": 7272509249,
+          "sender_username": "Aditya",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-04-30T23:58:35.087639+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Aditya",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-04-30T23:58:38.171543+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Aditya",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-04-30T23:58:40.176288+00:00",
+          "sender_id": 7272509249,
+          "sender_username": "Aditya",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Ur name"
+        },
+        {
+          "timestamp": "2025-04-30T23:58:43.364724+00:00",
+          "sender_id": 7272509249,
+          "sender_username": "Aditya",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Prince"
+        },
+        {
+          "timestamp": "2025-04-30T23:58:52.302117+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Aditya",
+          "message_type": "text",
+          "content": "G or b"
+        },
+        {
+          "timestamp": "2025-04-30T23:59:04.760156+00:00",
+          "sender_id": 7272509249,
+          "sender_username": "Aditya",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "G & u"
+        },
+        {
+          "timestamp": "2025-04-30T23:59:25.298953+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Aditya",
+          "message_type": "text",
+          "content": "B"
+        },
+        {
+          "timestamp": "2025-04-30T23:59:29.303193+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Aditya",
+          "message_type": "text",
+          "content": "Let's friend"
+        }
+      ],
+      "ended_at": "2025-04-30T23:59:39.730994+00:00",
+      "end_reason": "manual",
+      "ended_by": 7272509249
     }
   }
 }

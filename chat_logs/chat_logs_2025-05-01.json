@@ -1,0 +1,945 @@
+{
+  "created_at": "2025-05-01T00:03:28.114043+00:00",
+  "chats": {
+    "7272509249_7988565300": {
+      "users": [
+        {
+          "id": 7272509249,
+          "username": "Itz_prince8"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-05-01T02:23:12.353257+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T02:23:16.835351+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 7272509249,
+          "receiver_username": "Itz_prince8",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-01T04:53:54.014459+00:00",
+      "end_reason": "started_new",
+      "ended_by": 7988565300
+    },
+    "488743899_1923818771": {
+      "users": [
+        {
+          "id": 488743899,
+          "username": "Ankursy"
+        },
+        {
+          "id": 1923818771,
+          "username": "unique782"
+        }
+      ],
+      "started_at": "2025-05-01T04:45:40.975723+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T04:45:43.597671+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T04:45:50.782992+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "Male of female??"
+        },
+        {
+          "timestamp": "2025-05-01T04:46:26.892601+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-05-01T04:47:00.259118+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "What's up??"
+        },
+        {
+          "timestamp": "2025-05-01T04:47:10.944439+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Male"
+        },
+        {
+          "timestamp": "2025-05-01T04:47:13.037163+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "You"
+        },
+        {
+          "timestamp": "2025-05-01T04:47:20.242896+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "Same here"
+        }
+      ],
+      "ended_at": "2025-05-01T04:47:22.738262+00:00",
+      "end_reason": "manual",
+      "ended_by": 1923818771
+    },
+    "1923818771_7988565300": {
+      "users": [
+        {
+          "id": 1923818771,
+          "username": "unique782"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-05-01T04:53:54.822178+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T04:53:57.335865+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:07.007622+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi\nMale or female??"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:13.051787+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:13.819397+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:18.508909+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Same here"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:25.095336+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1923818771,
+          "receiver_username": "unique782",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-05-01T04:54:29.235376+00:00",
+          "sender_id": 1923818771,
+          "sender_username": "unique782",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Yeah"
+        }
+      ],
+      "ended_at": "2025-05-01T04:55:27.590766+00:00",
+      "end_reason": "manual",
+      "ended_by": 1923818771
+    },
+    "488743899_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 488743899,
+          "username": "Ankursy"
+        }
+      ],
+      "started_at": "2025-05-01T05:07:33.558492+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T05:07:38.707271+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-01T05:07:42.074443+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "M or F"
+        },
+        {
+          "timestamp": "2025-05-01T05:20:29.588865+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-01T05:20:30.181099+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "U"
+        }
+      ],
+      "ended_at": "2025-05-01T05:44:25.495343+00:00",
+      "end_reason": "started_new",
+      "ended_by": 7988565300
+    },
+    "6261300717_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-01T11:12:25.657796+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T11:12:28.765008+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T11:12:32.817630+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "M or f ?"
+        },
+        {
+          "timestamp": "2025-05-01T11:12:35.931424+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-01T11:12:36.632087+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "I"
+        },
+        {
+          "timestamp": "2025-05-01T11:12:38.052893+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-01T11:28:47.669644+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "F"
+        }
+      ],
+      "ended_at": "2025-05-01T11:29:01.004754+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6261300717
+    },
+    "1437726359_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        }
+      ],
+      "started_at": "2025-05-01T07:28:16.638542+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T07:28:18.872055+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:24.101684+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:25.615439+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:32.682485+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Souvig"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:38.584927+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "You?"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:40.260834+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "What"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:46.662858+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Name?"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:52.761272+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "M or f"
+        },
+        {
+          "timestamp": "2025-05-01T07:28:55.489438+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-01T07:29:09.160881+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Age"
+        },
+        {
+          "timestamp": "2025-05-01T07:29:15.193762+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "22"
+        },
+        {
+          "timestamp": "2025-05-01T07:29:25.092565+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "You? M or F?"
+        },
+        {
+          "timestamp": "2025-05-01T07:29:35.459446+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-05-01T07:29:40.155883+00:00",
+      "end_reason": "manual",
+      "ended_by": 1437726359
+    },
+    "1383323644_1437726359": {
+      "users": [
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        },
+        {
+          "id": 1383323644,
+          "username": "sayan450"
+        }
+      ],
+      "started_at": "2025-05-01T08:53:10.157332+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T08:53:14.002193+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-01T08:53:24.787008+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T08:53:31.721351+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "M or F?"
+        },
+        {
+          "timestamp": "2025-05-01T08:53:32.034930+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Boy??"
+        },
+        {
+          "timestamp": "2025-05-01T08:53:35.595733+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "Yes"
+        }
+      ],
+      "ended_at": "2025-05-01T08:53:39.676234+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1383323644
+    },
+    "5326179528_6688790694": {
+      "users": [
+        {
+          "id": 5326179528,
+          "username": "Petarrr9"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-05-01T09:20:13.490856+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T09:20:20.305311+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-01T09:20:43.450151+00:00",
+          "sender_id": 5326179528,
+          "sender_username": "Petarrr9",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T09:20:55.573723+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 5326179528,
+          "receiver_username": "Petarrr9",
+          "message_type": "text",
+          "content": "M from Kolkata"
+        }
+      ],
+      "ended_at": "2025-05-01T09:21:01.647499+00:00",
+      "end_reason": "manual",
+      "ended_by": 5326179528
+    },
+    "6261300717_8172691270": {
+      "users": [
+        {
+          "id": 8172691270,
+          "username": "L"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-01T11:29:01.823495+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T11:29:06.124721+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 8172691270,
+          "receiver_username": "L",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-05-01T11:29:44.512309+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 8172691270,
+          "receiver_username": "L",
+          "message_type": "text",
+          "content": "??"
+        },
+        {
+          "timestamp": "2025-05-01T11:29:46.649728+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 8172691270,
+          "receiver_username": "L",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-05-01T11:29:48.536390+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 8172691270,
+          "receiver_username": "L",
+          "message_type": "text",
+          "content": "U ?"
+        },
+        {
+          "timestamp": "2025-05-01T11:30:01.483816+00:00",
+          "sender_id": 8172691270,
+          "sender_username": "L",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "I from Bengaluru"
+        },
+        {
+          "timestamp": "2025-05-01T11:30:09.793857+00:00",
+          "sender_id": 8172691270,
+          "sender_username": "L",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Your name"
+        }
+      ],
+      "ended_at": "2025-05-01T11:30:26.453396+00:00",
+      "end_reason": "started_new",
+      "ended_by": 8172691270
+    },
+    "7988565300_8172691270": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 8172691270,
+          "username": "L"
+        }
+      ],
+      "started_at": "2025-05-01T15:50:29.370498+00:00",
+      "messages": [],
+      "ended_at": "2025-05-01T15:50:31.493061+00:00",
+      "end_reason": "started_new",
+      "ended_by": 8172691270
+    },
+    "5799548923_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 5799548923,
+          "username": "itzdevilking143"
+        }
+      ],
+      "started_at": "2025-05-01T12:55:45.259233+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T12:55:53.798943+00:00",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-05-01T12:56:01.538228+00:00",
+          "sender_id": 5799548923,
+          "sender_username": "itzdevilking143",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Male or female"
+        }
+      ],
+      "ended_at": "2025-05-01T15:40:05.673001+00:00",
+      "end_reason": "started_new",
+      "ended_by": 7988565300
+    },
+    "5448598837_6261300717": {
+      "users": [
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-01T15:06:44.187255+00:00",
+      "messages": []
+    },
+    "5511806765_6261300717": {
+      "users": [
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-05-01T18:39:44.665117+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T18:39:48.150056+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-01T18:39:48.753333+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-05-01T18:40:24.148561+00:00",
+      "end_reason": "manual",
+      "ended_by": 5511806765
+    },
+    "1437726359_5511806765": {
+      "users": [
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        },
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        }
+      ],
+      "started_at": "2025-05-01T19:02:02.687086+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T19:02:04.761097+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T19:02:09.548991+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Boy or girl?"
+        },
+        {
+          "timestamp": "2025-05-01T19:02:36.250920+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Boy"
+        },
+        {
+          "timestamp": "2025-05-01T19:02:38.275568+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "U?"
+        }
+      ],
+      "ended_at": "2025-05-01T19:15:41.538215+00:00",
+      "end_reason": "manual",
+      "ended_by": 1437726359
+    },
+    "1437726359_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 1437726359,
+          "username": "Laddus12345"
+        }
+      ],
+      "started_at": "2025-05-01T21:11:33.978440+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T21:11:37.536250+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:40.309884+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:42.296196+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:42.949741+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Talk"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:45.139184+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:46.025216+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:52.196405+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "Ur name"
+        },
+        {
+          "timestamp": "2025-05-01T21:11:55.129895+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Boy or girl?"
+        },
+        {
+          "timestamp": "2025-05-01T21:12:00.622401+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Biddu"
+        },
+        {
+          "timestamp": "2025-05-01T21:12:04.875336+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "B"
+        },
+        {
+          "timestamp": "2025-05-01T21:12:05.715966+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 1437726359,
+          "receiver_username": "Laddus12345",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-01T21:12:10.382865+00:00",
+          "sender_id": 1437726359,
+          "sender_username": "Laddus12345",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Boy"
+        }
+      ],
+      "ended_at": "2025-05-01T21:12:12.363884+00:00",
+      "end_reason": "manual",
+      "ended_by": 1437726359
+    },
+    "6695313832_7988565300": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-05-01T21:13:00.398757+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-01T21:13:03.623327+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-01T21:14:29.500178+00:00",
+      "end_reason": "manual",
+      "ended_by": 7988565300
+    }
+  }
+}

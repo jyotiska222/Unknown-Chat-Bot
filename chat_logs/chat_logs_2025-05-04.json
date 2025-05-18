@@ -1,0 +1,335 @@
+{
+  "created_at": "2025-05-04T02:39:16.827804+00:00",
+  "chats": {
+    "997570281_6695313832": {
+      "users": [
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        },
+        {
+          "id": 6695313832,
+          "username": "."
+        }
+      ],
+      "started_at": "2025-05-04T02:39:16.820933+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T02:39:19.732833+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-04T04:31:46.990096+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6695313832
+    },
+    "6261300717_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-04T03:23:08.138780+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T03:23:14.698402+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:15.002522+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:17.164215+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "F here"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:18.088715+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:19.255521+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:21.988835+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M heee"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:26.605426+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Bangalore"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:27.374773+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:35.116861+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Delhi"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:39.912905+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:43.193758+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Age"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:47.393458+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:52.194723+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "You're ?"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:59.588922+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Abhi"
+        },
+        {
+          "timestamp": "2025-05-04T03:23:59.863529+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Age ?"
+        },
+        {
+          "timestamp": "2025-05-04T03:24:06.108513+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Urs"
+        },
+        {
+          "timestamp": "2025-05-04T03:24:21.060744+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Let's chat private"
+        }
+      ],
+      "ended_at": "2025-05-04T03:24:25.465751+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "6695313832_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 6695313832,
+          "username": "."
+        }
+      ],
+      "started_at": "2025-05-04T04:31:59.034650+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T04:32:03.893715+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-04T04:32:08.244024+00:00",
+      "end_reason": "manual",
+      "ended_by": 7988565300
+    },
+    "5511806765_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-05-04T13:42:06.100530+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T13:42:12.261490+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-04T13:42:12.905614+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "M"
+        }
+      ],
+      "ended_at": "2025-05-04T13:43:07.897616+00:00",
+      "end_reason": "started_new",
+      "ended_by": 5511806765
+    },
+    "5511806765_6371975928": {
+      "users": [
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        },
+        {
+          "id": 6371975928,
+          "username": "Zingo"
+        }
+      ],
+      "started_at": "2025-05-04T18:22:35.764728+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T18:22:45.822702+00:00",
+          "sender_id": 6371975928,
+          "sender_username": "Zingo",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-04T18:22:55.677720+00:00",
+          "sender_id": 6371975928,
+          "sender_username": "Zingo",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Chat"
+        }
+      ],
+      "ended_at": "2025-05-04T18:23:03.250682+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6371975928
+    },
+    "6371975928_8036287362": {
+      "users": [
+        {
+          "id": 6371975928,
+          "username": "Zingo"
+        },
+        {
+          "id": 8036287362,
+          "username": "Sim90175"
+        }
+      ],
+      "started_at": "2025-05-04T20:35:11.559253+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-04T20:35:17.185856+00:00",
+          "sender_id": 8036287362,
+          "sender_username": "Sim90175",
+          "receiver_id": 6371975928,
+          "receiver_username": "Zingo",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-04T20:36:04.452360+00:00",
+          "sender_id": 8036287362,
+          "sender_username": "Sim90175",
+          "receiver_id": 6371975928,
+          "receiver_username": "Zingo",
+          "message_type": "text",
+          "content": "you can text me we can have some fun @Sim90175"
+        }
+      ]
+    }
+  }
+}

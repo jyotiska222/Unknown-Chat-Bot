@@ -1,0 +1,473 @@
+{
+  "created_at": "2025-05-06T04:48:40.175206+00:00",
+  "chats": {
+    "6695313832_8036287362": {
+      "users": [
+        {
+          "id": 8036287362,
+          "username": "Sim90175"
+        },
+        {
+          "id": 6695313832,
+          "username": "."
+        }
+      ],
+      "started_at": "2025-05-06T14:08:06.549233+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T14:08:11.750374+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 8036287362,
+          "receiver_username": "Sim90175",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-06T14:09:21.534025+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6695313832
+    },
+    "5448598837_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-05-06T10:24:02.623399+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T10:24:06.034202+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hlw"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:09.344330+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:11.494492+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Ir anme"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:13.540001+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Name"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:18.392557+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M/f?"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:24.326402+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:33.227517+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "I asked first"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:40.227132+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:40.832460+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:46.912795+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-06T10:24:58.781305+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Ur name?"
+        },
+        {
+          "timestamp": "2025-05-06T10:25:27.518859+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Sunny here from Dakshineswar, Kolkata"
+        },
+        {
+          "timestamp": "2025-05-06T10:25:29.965052+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "U?"
+        }
+      ],
+      "ended_at": "2025-05-06T10:25:37.611168+00:00",
+      "end_reason": "manual",
+      "ended_by": 6695313832
+    },
+    "6688790694_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-05-06T10:30:12.025715+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T10:30:16.744922+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-06T10:30:51.794473+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 6688790694,
+          "receiver_username": "perplexedraj",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-05-06T10:31:05.792291+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M from Kolkata"
+        }
+      ],
+      "ended_at": "2025-05-06T14:08:05.544672+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6695313832
+    },
+    "488743899_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 488743899,
+          "username": "Ankursy"
+        }
+      ],
+      "started_at": "2025-05-06T15:41:58.224175+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T15:42:03.933810+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-06T15:42:07.388914+00:00",
+          "sender_id": 488743899,
+          "sender_username": "Ankursy",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M or f"
+        },
+        {
+          "timestamp": "2025-05-06T16:03:37.427108+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 488743899,
+          "receiver_username": "Ankursy",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-06T16:03:40.697533+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6695313832
+    },
+    "5511806765_6695313832": {
+      "users": [
+        {
+          "id": 6695313832,
+          "username": "."
+        },
+        {
+          "id": 5511806765,
+          "username": "fiji2004"
+        }
+      ],
+      "started_at": "2025-05-06T16:36:03.080703+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T16:36:17.493179+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-06T16:36:18.301345+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-06T16:36:51.347337+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Hlo"
+        },
+        {
+          "timestamp": "2025-05-06T16:37:14.584058+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "What u doing?"
+        },
+        {
+          "timestamp": "2025-05-06T16:37:59.716788+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "TV watching"
+        },
+        {
+          "timestamp": "2025-05-06T16:38:00.688323+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "I"
+        },
+        {
+          "timestamp": "2025-05-06T16:38:04.650197+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-06T16:40:37.755736+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Ohh"
+        },
+        {
+          "timestamp": "2025-05-06T16:40:46.491109+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Just scrolling oh"
+        },
+        {
+          "timestamp": "2025-05-06T16:41:18.749470+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "U from?"
+        },
+        {
+          "timestamp": "2025-05-06T17:04:55.281946+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "Bangalore"
+        },
+        {
+          "timestamp": "2025-05-06T17:04:55.843233+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "U"
+        },
+        {
+          "timestamp": "2025-05-06T17:09:46.900284+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Hyderabad"
+        },
+        {
+          "timestamp": "2025-05-06T17:09:50.545246+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Ur age?"
+        },
+        {
+          "timestamp": "2025-05-06T17:11:02.730114+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "U m or f"
+        },
+        {
+          "timestamp": "2025-05-06T17:11:17.968419+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-06T17:11:21.271578+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-05-06T17:11:25.909455+00:00",
+          "sender_id": 6695313832,
+          "sender_username": ".",
+          "receiver_id": 5511806765,
+          "receiver_username": "fiji2004",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-06T17:11:30.703794+00:00",
+          "sender_id": 5511806765,
+          "sender_username": "fiji2004",
+          "receiver_id": 6695313832,
+          "receiver_username": ".",
+          "message_type": "text",
+          "content": "Ohk"
+        }
+      ],
+      "ended_at": "2025-05-06T18:31:44.245678+00:00",
+      "end_reason": "started_new",
+      "ended_by": 5511806765
+    },
+    "1619752182_6688790694": {
+      "users": [
+        {
+          "id": 1619752182,
+          "username": "Heyyuuuiiii"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-05-06T17:43:01.418392+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-06T17:43:05.200547+00:00",
+          "sender_id": 6688790694,
+          "sender_username": "perplexedraj",
+          "receiver_id": 1619752182,
+          "receiver_username": "Heyyuuuiiii",
+          "message_type": "text",
+          "content": "Hii"
+        }
+      ],
+      "ended_at": "2025-05-06T19:06:31.144581+00:00",
+      "end_reason": "manual",
+      "ended_by": 6688790694
+    }
+  }
+}
