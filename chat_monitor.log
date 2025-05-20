@@ -2056,3 +2056,98 @@
 2025-05-19 12:56:10,612 - chat_monitor - INFO - Logged text message from 1437726359 to 5448598837
 2025-05-19 12:56:17,084 - chat_monitor - INFO - Logged text message from 5448598837 to 1437726359
 2025-05-19 12:56:19,244 - chat_monitor - INFO - Chat ended between 5448598837 and 1437726359, reason: manual
+2025-05-19 14:38:27,544 - chat_monitor - INFO - Chat started between 7988565300 and 6261300717
+2025-05-19 14:38:43,217 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-05-19 14:38:46,202 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-05-19 14:38:47,720 - chat_monitor - INFO - Logged text message from 6261300717 to 7988565300
+2025-05-19 14:38:49,549 - chat_monitor - INFO - Chat ended between 6261300717 and 7988565300, reason: manual
+2025-05-19 15:49:57,344 - chat_monitor - INFO - Chat started between 7988565300 and 5448598837
+2025-05-19 15:50:03,224 - chat_monitor - INFO - Logged text message from 5448598837 to 7988565300
+2025-05-19 15:50:36,174 - chat_monitor - INFO - Logged text message from 7988565300 to 5448598837
+2025-05-19 15:55:41,600 - chat_monitor - INFO - Logged text message from 5448598837 to 7988565300
+2025-05-19 15:58:20,263 - chat_monitor - INFO - Chat ended between 5448598837 and 7988565300, reason: manual
+2025-05-19 19:26:18,415 - chat_monitor - INFO - Chat started between 7349879385 and 6261300717
+2025-05-19 19:26:23,214 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-19 19:26:25,329 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-19 19:26:36,860 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:26:41,777 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:26:43,223 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-19 19:26:52,928 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:26:57,949 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:28:05,159 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:30:42,299 - chat_monitor - INFO - Logged text message from 7349879385 to 6261300717
+2025-05-19 19:32:35,819 - chat_monitor - INFO - Chat ended between 6261300717 and 7349879385, reason: manual
+2025-05-19 19:56:09,972 - chat_monitor - INFO - Chat started between 7349879385 and 2023022792
+2025-05-19 19:56:13,185 - chat_monitor - INFO - Logged text message from 2023022792 to 7349879385
+2025-05-19 19:56:15,477 - chat_monitor - INFO - Chat ended between 2023022792 and 7349879385, reason: manual
+2025-05-20 03:06:08,763 - chat_monitor - INFO - Created new log file: chat_logs/chat_logs_2025-05-20.json
+2025-05-20 03:07:08,534 - chat_monitor - INFO - Chat started between 7349879385 and 6261300717
+2025-05-20 03:07:11,663 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-20 03:07:15,643 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-20 03:07:18,670 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-20 03:07:21,078 - chat_monitor - INFO - Logged text message from 6261300717 to 7349879385
+2025-05-20 03:07:27,057 - chat_monitor - INFO - Chat ended between 6261300717 and 7349879385, reason: manual
+2025-05-20 05:39:37,925 - chat_monitor - INFO - Chat started between 997570281 and 6261300717
+2025-05-20 05:39:47,283 - chat_monitor - INFO - Logged text message from 6261300717 to 997570281
+2025-05-20 05:39:49,548 - chat_monitor - INFO - Logged text message from 6261300717 to 997570281
+2025-05-20 05:39:50,961 - chat_monitor - INFO - Logged text message from 6261300717 to 997570281
+2025-05-20 05:39:52,637 - chat_monitor - INFO - Chat ended between 6261300717 and 997570281, reason: manual
+2025-05-20 07:41:34,703 - chat_monitor - INFO - Chat started between 7200913109 and 5448598837
+2025-05-20 07:41:37,659 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 07:41:40,601 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 07:46:09,667 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 07:46:17,057 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 07:46:27,102 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 07:46:30,889 - chat_monitor - INFO - Chat ended between 5448598837 and 7200913109, reason: manual
+2025-05-20 08:43:43,407 - chat_monitor - INFO - Chat started between 6836610127 and 7200913109
+2025-05-20 08:43:46,535 - chat_monitor - INFO - Logged text message from 7200913109 to 6836610127
+2025-05-20 08:47:38,715 - chat_monitor - INFO - Logged voice message from 7200913109 to 6836610127
+2025-05-20 08:54:42,505 - chat_monitor - INFO - Chat ended between 7200913109 and 6836610127, reason: manual
+2025-05-20 09:15:52,788 - chat_monitor - INFO - Chat started between 7200913109 and 6261300717
+2025-05-20 09:15:55,241 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:15:59,042 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:01,332 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:03,164 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:06,004 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:18,510 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:19,904 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:23,583 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:26,200 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:32,505 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:36,164 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:16:42,337 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:43,906 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:16:50,486 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:17:16,710 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:17:19,554 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:17:29,186 - chat_monitor - INFO - Logged text message from 6261300717 to 7200913109
+2025-05-20 09:17:40,943 - chat_monitor - INFO - Logged text message from 7200913109 to 6261300717
+2025-05-20 09:17:49,299 - chat_monitor - INFO - Chat ended between 6261300717 and 7200913109, reason: manual
+2025-05-20 09:20:05,535 - chat_monitor - INFO - Chat started between 7200913109 and 5448598837
+2025-05-20 09:20:08,984 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 09:20:12,321 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 09:20:17,239 - chat_monitor - INFO - Logged text message from 7200913109 to 5448598837
+2025-05-20 09:20:18,058 - chat_monitor - INFO - Logged text message from 7200913109 to 5448598837
+2025-05-20 09:20:26,386 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 09:20:29,537 - chat_monitor - INFO - Chat ended between 5448598837 and 7200913109, reason: manual
+2025-05-20 10:53:49,173 - chat_monitor - INFO - Chat started between 7200913109 and 6688790694
+2025-05-20 10:53:55,002 - chat_monitor - INFO - Logged text message from 6688790694 to 7200913109
+2025-05-20 11:49:27,926 - chat_monitor - INFO - Chat ended between 6688790694 and 7200913109, reason: manual
+2025-05-20 12:02:52,006 - chat_monitor - INFO - Chat started between 7200913109 and 997570281
+2025-05-20 12:02:58,209 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:03:01,060 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:03:45,784 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:03:48,310 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:04:01,392 - chat_monitor - INFO - Chat ended between 997570281 and 7200913109, reason: manual
+2025-05-20 12:11:02,025 - chat_monitor - INFO - Chat started between 997570281 and 7200913109
+2025-05-20 12:11:09,629 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:11:14,091 - chat_monitor - INFO - Logged text message from 997570281 to 7200913109
+2025-05-20 12:19:29,230 - chat_monitor - INFO - Logged text message from 7200913109 to 997570281
+2025-05-20 12:19:31,265 - chat_monitor - INFO - Logged text message from 7200913109 to 997570281
+2025-05-20 12:19:47,043 - chat_monitor - INFO - Chat ended between 997570281 and 7200913109, reason: manual
+2025-05-20 13:35:49,496 - chat_monitor - INFO - Chat started between 7200913109 and 5448598837
+2025-05-20 13:35:53,901 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 13:36:00,740 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 13:36:15,543 - chat_monitor - INFO - Logged text message from 5448598837 to 7200913109
+2025-05-20 13:36:36,802 - chat_monitor - INFO - Logged photo message from 5448598837 to 7200913109
+2025-05-20 13:36:59,597 - chat_monitor - INFO - Chat ended between 5448598837 and 7200913109, reason: manual
