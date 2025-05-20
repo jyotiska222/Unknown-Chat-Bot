@@ -17,7 +17,7 @@ This document provides detailed setup instructions for the Unknown Chat Bot proj
    (You can get a token by talking to [@BotFather](https://t.me/BotFather) on Telegram)
 
 3. **Configure your timezone** (optional, default is UTC):
-   - Edit the `TIMEZONE` constant in `bot.py`, `chat_manager.py`, and `chat_monitor.py`
+   - Edit the `TIMEZONE` constant in `bot.py`, `chat_manager.py`, `chat_monitor.py`, and `heartbeat_monitor.py`
    - Example for Eastern Time:
    ```python
    TIMEZONE = pytz.timezone('America/New_York')
@@ -29,13 +29,29 @@ This document provides detailed setup instructions for the Unknown Chat Bot proj
    ADMIN_IDS = [your_user_id_here]  # Replace with your user ID
    ```
    (You can get your user ID by sending a message to [@userinfobot](https://t.me/userinfobot))
+   
+   Note: These admin IDs will also receive automatic notifications about bot health.
 
-5. **Create Chat Logs Directory**:
+5. **Configure Heartbeat Monitoring** (optional):
+   You can adjust the heartbeat monitoring settings in `bot.py`:
+   ```python
+   # Find this line in the main section:
+   heartbeat_monitor.heartbeat_monitor = heartbeat_monitor.HeartbeatMonitor(ADMIN_IDS)
+   
+   # You can customize it with additional parameters:
+   heartbeat_monitor.heartbeat_monitor = heartbeat_monitor.HeartbeatMonitor(
+       ADMIN_IDS,
+       check_interval=60,  # Check every 60 seconds (default)
+       allowed_missed_beats=3  # Alert after 3 missed checks (default)
+   )
+   ```
+
+6. **Create Chat Logs Directory**:
    ```bash
    mkdir chat_logs
    ```
 
-6. **Run the Bot**:
+7. **Run the Bot**:
    ```bash
    python bot.py
    ```
@@ -119,6 +135,23 @@ Once your bot is running, you can use these admin commands on Telegram:
 - `/endchat <user_id> [reason]` - Forcefully end a chat
 - `/broadcast <message>` - Send a message to all users
 - `/bot_analysis` - Show detailed analysis of waiting users, active chats, and banned users with remaining ban times
+
+### Admin Notifications
+
+The bot includes an automatic admin notification system that alerts all users in the `ADMIN_IDS` list when:
+
+1. **Unexpected Shutdown**: 
+   - When the bot stops due to an error or external signal (not Ctrl+C)
+   - Includes timestamp and error details/stack trace
+   
+2. **Unresponsive Bot**: 
+   - When the bot is still running but hasn't processed any commands for a configurable period
+   - Default is 3 missed heartbeat checks (configurable)
+   - Ensures you're notified if the bot is running but frozen or unresponsive
+
+Notification logs are saved to:
+- `chat_monitor.log` - For regular bot activity
+- `heartbeat_monitor.log` - For heartbeat activity and alerts
 
 ## Deployment Tips
 

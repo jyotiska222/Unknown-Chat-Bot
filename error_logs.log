@@ -1,0 +1,4 @@
+2025-05-21 00:16:50,359 - error_logger - ERROR - Error in global_exception: error_handler() got an unexpected keyword argument 'location'
+2025-05-21 00:18:35,965 - error_logger - ERROR - Error in global_exception: error_handler() got an unexpected keyword argument 'location'
+2025-05-21 00:20:23,608 - error_logger - ERROR - Error in global_exception: 'str' object has no attribute 'update_id'
+2025-05-21 00:21:43,200 - error_logger - ERROR - Error in global_exception: 'str' object has no attribute '__qualname__'

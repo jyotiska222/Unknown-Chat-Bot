@@ -6,6 +6,9 @@ import threading
 import time
 import datetime
 import pytz  # For proper timezone handling
+import traceback  # Import for stacktrace capture
+import sys  # Import for exception handling
+import os  # For file operations
 from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
     Updater,
@@ -19,6 +22,8 @@ from telegram.error import TelegramError, Conflict
 from config import BOT_TOKEN
 import chat_manager  # Import chat_manager module
 from chat_monitor import chat_monitor  # Import the chat monitor
+import heartbeat_monitor  # Import heartbeat monitor
+from error_logger import error_recorder, error_handler as catch_errors  # Import error logging system with renamed decorator
 
 # Enable logging
 logging.basicConfig(
@@ -58,9 +63,14 @@ def format_datetime(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S %Z')
 
 # /start command
+@catch_errors
 def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     username = update.effective_user.username or update.effective_user.first_name
+    
+    # Update heartbeat to indicate bot is active
+    if heartbeat_monitor.heartbeat_monitor:
+        heartbeat_monitor.heartbeat_monitor.update_heartbeat()
     
     # Check if user is banned
     ban_info = chat_manager.is_banned(user_id)
@@ -92,6 +102,10 @@ def start(update: Update, context: CallbackContext):
 def chat(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     username = update.effective_user.username or update.effective_user.first_name
+    
+    # Update heartbeat to indicate bot is active
+    if heartbeat_monitor.heartbeat_monitor:
+        heartbeat_monitor.heartbeat_monitor.update_heartbeat()
     
     # Check if user is banned
     ban_info = chat_manager.is_banned(user_id)
@@ -307,8 +321,13 @@ def status(update: Update, context: CallbackContext):
         update.message.reply_text("You are not chatting or waiting. Use /chat to find someone.")
 
 # Improved media forwarding with better error handling
+@catch_errors
 def forward(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
+    
+    # Update heartbeat to indicate bot is active
+    if heartbeat_monitor.heartbeat_monitor:
+        heartbeat_monitor.heartbeat_monitor.update_heartbeat()
     
     # Check if user is banned
     ban_info = chat_manager.is_banned(user_id)
@@ -392,7 +411,7 @@ def forward(update: Update, context: CallbackContext):
                 user_id=user_id,
                 partner_id=partner_id,
                 message_type="video",
-                content="",
+                content="",  # Empty content for video
                 media_url=video_url,
                 caption=update.message.caption,
                 username=username,
@@ -922,11 +941,31 @@ def admin_bot_analysis(update: Update, context: CallbackContext):
 
 def error_handler(update, context):
     """Log Errors caused by Updates."""
+    # Check if update is an actual Update object or something else (like a string)
+    is_update_object = hasattr(update, 'update_id')
+    
+    error_info = {
+        "update_id": update.update_id if is_update_object else None,
+        "chat_id": update.effective_chat.id if is_update_object and update.effective_chat else None,
+        "user_message": update.effective_message.text if is_update_object and update.effective_message else None,
+        "error": str(context.error),
+        "error_type": type(context.error).__name__
+    }
+    
+    # Log detailed error information
+    error_recorder.log_error(
+        error=context.error,
+        location="telegram_update",
+        user_id=update.effective_user.id if is_update_object and update.effective_user else None,
+        additional_data=error_info
+    )
+    
+    # Original logging
     logger.error(f"Update {update} caused error {context.error}")
     
     try:
         # Notify user of error
-        if update and update.effective_message:
+        if is_update_object and update.effective_message:
             update.effective_message.reply_text(
                 "Sorry, something went wrong. Please try again later."
             )
@@ -963,18 +1002,71 @@ def stop_bot(signum, frame):
     """Handle signals to stop the bot gracefully"""
     print("\nStopping bot...")
     
+    # Stop heartbeat monitoring
+    if heartbeat_monitor.heartbeat_monitor:
+        heartbeat_monitor.heartbeat_monitor.stop_monitoring()
+    
     # Save user data before exit
     chat_manager.save_users_to_file()
     chat_manager.save_banned_users()
     
+    # Get exception info if this was called due to an exception
+    exc_info = sys.exc_info()
+    is_unexpected = exc_info[0] is not None or signum != signal.SIGINT
+    
+    # If this wasn't a normal Ctrl+C shutdown, notify admins
+    if is_unexpected:
+        error_trace = ''.join(traceback.format_exception(*exc_info)) if exc_info[0] else f"Signal received: {signum}"
+        error_message = f"⚠️ BOT SHUTDOWN ALERT ⚠️\n\nThe bot has stopped unexpectedly.\n\nTimestamp: {format_datetime(get_localized_time())}\nReason: {error_trace[:500]}"
+        
+        # Log error to our error system
+        if exc_info[0]:
+            error_recorder.log_error(
+                error=exc_info[1],
+                location="bot_shutdown",
+                additional_data={"signal": signum}
+            )
+        
+        try:
+            # Create a new updater to send messages (in case main updater is down)
+            temp_updater = Updater(token=BOT_TOKEN)
+            for admin_id in ADMIN_IDS:
+                try:
+                    temp_updater.bot.send_message(chat_id=admin_id, text=error_message)
+                    logger.info(f"Sent shutdown alert to admin {admin_id}")
+                except Exception as e:
+                    logger.error(f"Failed to notify admin {admin_id} about shutdown: {e}")
+        except Exception as e:
+            logger.error(f"Failed to create temporary updater for admin notifications: {e}")
+    
     print("User data saved. Exiting...")
     exit(0)
+
+# Custom exception handler to capture uncaught exceptions
+def custom_excepthook(exc_type, exc_value, exc_traceback):
+    """Handle uncaught exceptions and notify admins before shutdown"""
+    # Log to our error system first
+    error_recorder.log_error(
+        error=exc_value,
+        location="global_exception",
+        additional_data={"exc_type": exc_type.__name__}
+    )
+    
+    # Log to standard logger too
+    logger.critical("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
+    
+    # Notify admins and handle shutdown
+    stop_bot(None, None)  # Call stop_bot to handle the shutdown
+
+# Set the custom exception handler
+sys.excepthook = custom_excepthook
 
 # Attach signals to stop the bot gracefully
 signal.signal(signal.SIGINT, stop_bot)   # Ctrl+C
 signal.signal(signal.SIGTERM, stop_bot)  # kill command
 
 # Broadcast command - for admin use only
+@catch_errors("admin_broadcast", False)
 def broadcast(update: Update, context: CallbackContext):
     """Send a broadcast message to all users who have used the bot"""
     user_id = update.effective_user.id
@@ -1046,6 +1138,146 @@ def broadcast(update: Update, context: CallbackContext):
     )
     logger.info(f"Broadcast by admin {user_id} complete. Success: {successful}, Failed: {failed}")
 
+# Heartbeat update function
+def update_heartbeat():
+    """Update the heartbeat timestamp to indicate the bot is running"""
+    while True:
+        if heartbeat_monitor.heartbeat_monitor:
+            heartbeat_monitor.heartbeat_monitor.update_heartbeat()
+        time.sleep(30)  # Update heartbeat every 30 seconds
+
+@catch_errors("admin_error_stats", False)
+def admin_error_stats(update: Update, context: CallbackContext):
+    """Show error statistics for admins"""
+    user_id = update.effective_user.id
+    
+    # Check if user is authorized
+    if user_id not in ADMIN_IDS:
+        update.message.reply_text("⛔ You are not authorized to use this command.")
+        logger.warning(f"Unauthorized error stats attempt by user {user_id}")
+        return
+    
+    # Parse command args
+    if context.args and context.args[0] == "dates":
+        # Show available dates with error logs
+        dates = error_recorder.get_available_dates()
+        if dates:
+            date_list = "\n".join(dates)
+            update.message.reply_text(
+                f"📅 Error logs are available for these dates:\n\n{date_list}\n\n"
+                f"Use /errors <date> to view errors for a specific date."
+            )
+        else:
+            update.message.reply_text("No error logs available.")
+        return
+    
+    if context.args and context.args[0].startswith("20"):  # Assume it's a date like 2023-05-21
+        # Show errors for specific date
+        date_str = context.args[0]
+        errors = error_recorder.get_errors_by_date(date_str)
+        
+        if not errors:
+            update.message.reply_text(f"No errors found for date {date_str}.")
+            return
+        
+        # Create summary
+        total = len(errors)
+        types = {}
+        for err in errors:
+            err_type = err.get("error_type", "Unknown")
+            types[err_type] = types.get(err_type, 0) + 1
+        
+        # Format type summary
+        type_summary = "\n".join([f"- {t}: {c} occurrences" for t, c in sorted(types.items(), key=lambda x: x[1], reverse=True)])
+        
+        # Send summary first
+        update.message.reply_text(
+            f"📊 Error summary for {date_str}:\n\n"
+            f"Total errors: {total}\n\n"
+            f"Error types:\n{type_summary}\n\n"
+            f"Use /errors {date_str} detail to view detailed error information."
+        )
+        
+        # If 'detail' is specified, send the most recent 5 errors with details
+        if len(context.args) > 1 and context.args[1] == "detail":
+            for i, err in enumerate(errors[:5]):
+                error_time = datetime.datetime.fromisoformat(err["timestamp"]).strftime("%H:%M:%S")
+                error_msg = (
+                    f"🔍 Error {i+1}/{min(5, total)} on {date_str} at {error_time}:\n\n"
+                    f"Type: {err.get('error_type', 'Unknown')}\n"
+                    f"Message: {err.get('error_message', 'No message')}\n"
+                    f"Location: {err.get('location', 'Unknown')}\n"
+                )
+                
+                if "user_id" in err and err["user_id"]:
+                    error_msg += f"User ID: {err['user_id']}\n"
+                
+                # Send with truncated stack trace if available
+                if "stack_trace" in err and err["stack_trace"]:
+                    # Truncate to first 10 lines
+                    stack_lines = err["stack_trace"].split("\n")[:10]
+                    stack_trace = "\n".join(stack_lines)
+                    
+                    # Send stack trace in a separate message if it's long
+                    update.message.reply_text(error_msg)
+                    update.message.reply_text(
+                        f"Stack trace:\n\n{stack_trace}"
+                    )
+                else:
+                    update.message.reply_text(error_msg)
+        
+        return
+    
+    # If no specific request, show general error statistics
+    stats = error_recorder.get_error_summary()
+    recent_errors = error_recorder.get_recent_errors(5)  # Get 5 most recent errors
+    
+    # Format the message
+    message = (
+        f"📊 Error Statistics:\n\n"
+        f"Total errors recorded: {stats['total_errors']}\n"
+        f"Recent errors in memory: {stats['recent_errors']}\n"
+    )
+    
+    # Add most common error if available
+    if stats['most_common_error']:
+        error_type, count = stats['most_common_error']
+        message += f"Most common error: {error_type} ({count} occurrences)\n\n"
+    
+    # Add error types breakdown
+    if stats['error_types']:
+        message += "Error types:\n"
+        for error_type, count in sorted(stats['error_types'].items(), key=lambda x: x[1], reverse=True)[:10]:
+            message += f"- {error_type}: {count}\n"
+    
+    # Add information about logs directory
+    if os.path.exists('logs'):
+        logs_count = len([f for f in os.listdir('logs') if f.startswith('errors_') and f.endswith('.json')])
+        message += f"\n📁 Error log files: {logs_count}\n"
+        message += "Use /errors dates to see available dates.\n"
+        message += "Use /errors YYYY-MM-DD to see errors for a specific date."
+    
+    # Send statistics message
+    update.message.reply_text(message)
+    
+    # If there are recent errors, send a summary
+    if recent_errors:
+        recent_msg = "🕒 Recent errors:\n\n"
+        
+        for i, err in enumerate(recent_errors):
+            # Format timestamp to readable format
+            err_time = datetime.datetime.fromisoformat(err["timestamp"]).strftime("%Y-%m-%d %H:%M:%S")
+            
+            recent_msg += (
+                f"{i+1}. {err.get('error_type', 'Unknown')}: "
+                f"{err.get('error_message', 'No message')[:50]}...\n"
+                f"   At: {err_time}, Location: {err.get('location', 'Unknown')}\n\n"
+            )
+        
+        update.message.reply_text(recent_msg)
+    
+    logger.info(f"Error statistics report generated for admin {user_id}")
+
 # Main run
 if __name__ == "__main__":
     # Load users from file if available
@@ -1061,53 +1293,68 @@ if __name__ == "__main__":
     # Set the start time
     start_time = get_localized_time()
     
-    # Create the conversation handler for chat preferences
-    chat_conv_handler = ConversationHandler(
-        entry_points=[CommandHandler('chat', chat)],
-        states={
-            GENDER: [MessageHandler(Filters.text & ~Filters.command, gender_selection)],
-            INTEREST: [MessageHandler(Filters.text & ~Filters.command, interest_selection)],
-            MATCHING: [MessageHandler(Filters.text & ~Filters.command, check_match)]
-        },
-        fallbacks=[CommandHandler('leave', leave)]
-    )
+    # Initialize and start heartbeat monitoring
+    heartbeat_monitor.heartbeat_monitor = heartbeat_monitor.HeartbeatMonitor(ADMIN_IDS)
+    heartbeat_monitor.heartbeat_monitor.start_monitoring()
     
-    # Command handlers
-    dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(chat_conv_handler)  # Use the conversation handler instead of a simple command
-    dispatcher.add_handler(CommandHandler("leave", leave))
-    dispatcher.add_handler(CommandHandler("status", status))
-    dispatcher.add_handler(CommandHandler("broadcast", broadcast))
+    # Start heartbeat update thread
+    heartbeat_thread = threading.Thread(target=update_heartbeat)
+    heartbeat_thread.daemon = True
+    heartbeat_thread.start()
     
-    # Admin command handlers
-    dispatcher.add_handler(CommandHandler("ban", admin_ban_user))
-    dispatcher.add_handler(CommandHandler("unban", admin_unban_user))
-    dispatcher.add_handler(CommandHandler("bannedlist", admin_list_banned))
-    dispatcher.add_handler(CommandHandler("endchat", admin_end_chat))
-    dispatcher.add_handler(CommandHandler("bot_analysis", admin_bot_analysis))
-    
-    # Add error handler
-    dispatcher.add_error_handler(error_handler)
-    
-    # Handle all supported message types
-    dispatcher.add_handler(MessageHandler(
-        Filters.text & ~Filters.command | 
-        Filters.photo | 
-        Filters.video | 
-        Filters.sticker | 
-        Filters.video_note | 
-        Filters.voice | 
-        Filters.document | 
-        Filters.audio | 
-        Filters.animation,
-        forward
-    ))
-    
-    # Analytics thread
-    analytics_thread = threading.Thread(target=print_analytics)
-    analytics_thread.daemon = True
-    analytics_thread.start()
-    
-    print("Bot started!")
-    updater.start_polling()
-    updater.idle()
+    try:
+        # Create the conversation handler for chat preferences
+        chat_conv_handler = ConversationHandler(
+            entry_points=[CommandHandler('chat', chat)],
+            states={
+                GENDER: [MessageHandler(Filters.text & ~Filters.command, gender_selection)],
+                INTEREST: [MessageHandler(Filters.text & ~Filters.command, interest_selection)],
+                MATCHING: [MessageHandler(Filters.text & ~Filters.command, check_match)]
+            },
+            fallbacks=[CommandHandler('leave', leave)]
+        )
+        
+        # Command handlers
+        dispatcher.add_handler(CommandHandler("start", start))
+        dispatcher.add_handler(chat_conv_handler)  # Use the conversation handler instead of a simple command
+        dispatcher.add_handler(CommandHandler("leave", leave))
+        dispatcher.add_handler(CommandHandler("status", status))
+        dispatcher.add_handler(CommandHandler("broadcast", broadcast))
+        
+        # Admin command handlers
+        dispatcher.add_handler(CommandHandler("ban", admin_ban_user))
+        dispatcher.add_handler(CommandHandler("unban", admin_unban_user))
+        dispatcher.add_handler(CommandHandler("bannedlist", admin_list_banned))
+        dispatcher.add_handler(CommandHandler("endchat", admin_end_chat))
+        dispatcher.add_handler(CommandHandler("bot_analysis", admin_bot_analysis))
+        dispatcher.add_handler(CommandHandler("errors", admin_error_stats))  # Add new error stats command
+        
+        # Add error handler
+        dispatcher.add_error_handler(error_handler)
+        
+        # Handle all supported message types
+        dispatcher.add_handler(MessageHandler(
+            Filters.text & ~Filters.command | 
+            Filters.photo | 
+            Filters.video | 
+            Filters.sticker | 
+            Filters.video_note | 
+            Filters.voice | 
+            Filters.document | 
+            Filters.audio | 
+            Filters.animation,
+            forward
+        ))
+        
+        # Analytics thread
+        analytics_thread = threading.Thread(target=print_analytics)
+        analytics_thread.daemon = True
+        analytics_thread.start()
+        
+        print("Bot started!")
+        updater.start_polling()
+        updater.idle()
+    except Exception as e:
+        # Log the error and notify admins
+        logger.critical(f"Fatal error starting bot: {e}", exc_info=True)
+        stop_bot(None, None)  # This will handle admin notifications

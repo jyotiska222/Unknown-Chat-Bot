@@ -11,6 +11,7 @@ certifi>=2023.7.22          # SSL certificates
 # Data handling & formatting
 tabulate==0.9.0             # Pretty table formatting for admin dashboard
 setuptools>=42.0.0          # Required by APScheduler
+typing-extensions>=4.0.0    # Enhanced type hints support
 
 # Utils
 six>=1.10.0                 # Python 2/3 compatibility (required by some dependencies) 

@@ -1,0 +1,48 @@
+{
+  "errors": [
+    {
+      "timestamp": "2025-05-21T00:16:50.359571+05:30",
+      "error_type": "TypeError",
+      "error_message": "error_handler() got an unexpected keyword argument 'location'",
+      "location": "global_exception",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "exc_type": "TypeError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:18:35.965501+05:30",
+      "error_type": "TypeError",
+      "error_message": "error_handler() got an unexpected keyword argument 'location'",
+      "location": "global_exception",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "exc_type": "TypeError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:20:23.608125+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'str' object has no attribute 'update_id'",
+      "location": "global_exception",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "exc_type": "AttributeError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:21:43.200768+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'str' object has no attribute '__qualname__'",
+      "location": "global_exception",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "exc_type": "AttributeError"
+      }
+    }
+  ]
+}
