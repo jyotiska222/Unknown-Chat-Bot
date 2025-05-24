@@ -1,0 +1,633 @@
+{
+  "created_at": "2025-05-21T00:50:22.892478+00:00",
+  "chats": {
+    "1065078001_7349879385": {
+      "users": [
+        {
+          "id": 7349879385,
+          "username": "Hussain"
+        },
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        }
+      ],
+      "started_at": "2025-05-21T00:50:22.885109+00:00",
+      "messages": [],
+      "ended_at": "2025-05-21T00:50:27.390457+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1065078001
+    },
+    "1065078001_7200913109": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 7200913109,
+          "username": "savvy_3608"
+        }
+      ],
+      "started_at": "2025-05-21T16:46:16.075467+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T16:46:26.787113+00:00",
+          "sender_id": 7200913109,
+          "sender_username": "savvy_3608",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T16:46:35.075588+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-05-21T16:46:50.925466+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "He or she"
+        },
+        {
+          "timestamp": "2025-05-21T16:47:05.939079+00:00",
+          "sender_id": 7200913109,
+          "sender_username": "savvy_3608",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "He"
+        },
+        {
+          "timestamp": "2025-05-21T16:48:04.632539+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "Ok"
+        }
+      ],
+      "ended_at": "2025-05-21T16:48:14.237979+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1065078001
+    },
+    "1065078001_6261300717": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        }
+      ],
+      "started_at": "2025-05-21T02:22:54.785135+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T02:22:59.349138+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:04.271895+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "M or f ?"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:07.455267+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "M"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:09.713351+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "F here"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:13.614062+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:15.373140+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "U ?"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:21.986224+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Ok"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:32.175744+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "From ?"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:40.336842+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hyderabad India"
+        },
+        {
+          "timestamp": "2025-05-21T02:23:44.180687+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "You"
+        },
+        {
+          "timestamp": "2025-05-21T02:24:03.276692+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Srilanka"
+        },
+        {
+          "timestamp": "2025-05-21T02:24:11.150453+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Ohh nice"
+        },
+        {
+          "timestamp": "2025-05-21T02:24:23.146545+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Your name"
+        },
+        {
+          "timestamp": "2025-05-21T02:26:32.693052+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "??"
+        }
+      ],
+      "ended_at": "2025-05-21T02:27:28.495201+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1065078001
+    },
+    "1065078001_7607516444": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 7607516444,
+          "username": "Djjfifirntnckpccxbxbdn"
+        }
+      ],
+      "started_at": "2025-05-21T04:08:31.312414+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T04:08:34.455444+00:00",
+          "sender_id": 7607516444,
+          "sender_username": "Djjfifirntnckpccxbxbdn",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T04:08:44.057046+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7607516444,
+          "receiver_username": "Djjfifirntnckpccxbxbdn",
+          "message_type": "text",
+          "content": "Hello"
+        },
+        {
+          "timestamp": "2025-05-21T04:08:50.054436+00:00",
+          "sender_id": 7607516444,
+          "sender_username": "Djjfifirntnckpccxbxbdn",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "F here"
+        },
+        {
+          "timestamp": "2025-05-21T04:09:35.653569+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7607516444,
+          "receiver_username": "Djjfifirntnckpccxbxbdn",
+          "message_type": "text",
+          "content": "M here"
+        }
+      ],
+      "ended_at": "2025-05-21T04:10:32.889328+00:00",
+      "end_reason": "manual",
+      "ended_by": 7607516444
+    },
+    "997570281_7607516444": {
+      "users": [
+        {
+          "id": 7607516444,
+          "username": "Djjfifirntnckpccxbxbdn"
+        },
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        }
+      ],
+      "started_at": "2025-05-21T04:18:07.770743+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T04:18:12.264878+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7607516444,
+          "receiver_username": "Djjfifirntnckpccxbxbdn",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T04:18:17.169696+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 7607516444,
+          "receiver_username": "Djjfifirntnckpccxbxbdn",
+          "message_type": "text",
+          "content": "Your name?"
+        }
+      ],
+      "ended_at": "2025-05-21T04:21:15.498456+00:00",
+      "end_reason": "started_new",
+      "ended_by": 997570281
+    },
+    "997570281_1065078001": {
+      "users": [
+        {
+          "id": 997570281,
+          "username": "Kokes102k"
+        },
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        }
+      ],
+      "started_at": "2025-05-21T04:38:16.636884+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T04:38:23.996623+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Name?"
+        },
+        {
+          "timestamp": "2025-05-21T04:38:53.539452+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "M here"
+        },
+        {
+          "timestamp": "2025-05-21T04:39:01.757572+00:00",
+          "sender_id": 997570281,
+          "sender_username": "Kokes102k",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Bengali?"
+        },
+        {
+          "timestamp": "2025-05-21T04:39:13.284830+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 997570281,
+          "receiver_username": "Kokes102k",
+          "message_type": "text",
+          "content": "Can I one question"
+        }
+      ],
+      "ended_at": "2025-05-21T04:39:25.235457+00:00",
+      "end_reason": "started_new",
+      "ended_by": 997570281
+    },
+    "1065078001_6674830074": {
+      "users": [
+        {
+          "id": 6674830074,
+          "username": "CJha0"
+        },
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        }
+      ],
+      "started_at": "2025-05-21T05:44:40.752170+00:00",
+      "messages": [],
+      "ended_at": "2025-05-21T05:44:43.548017+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1065078001
+    },
+    "1065078001_1329841368": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 1329841368,
+          "username": "Verma"
+        }
+      ],
+      "started_at": "2025-05-21T06:57:27.972142+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T06:58:03.491602+00:00",
+          "sender_id": 1329841368,
+          "sender_username": "Verma",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-21T06:58:31.974286+00:00",
+      "end_reason": "manual",
+      "ended_by": 1329841368
+    },
+    "1065078001_5448598837": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 5448598837,
+          "username": "Sunny4HG"
+        }
+      ],
+      "started_at": "2025-05-21T07:37:23.621514+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T07:37:29.653423+00:00",
+          "sender_id": 5448598837,
+          "sender_username": "Sunny4HG",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Name?"
+        },
+        {
+          "timestamp": "2025-05-21T07:38:43.640285+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Pradeep"
+        },
+        {
+          "timestamp": "2025-05-21T07:38:45.763669+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 5448598837,
+          "receiver_username": "Sunny4HG",
+          "message_type": "text",
+          "content": "Your"
+        }
+      ],
+      "ended_at": "2025-05-21T08:27:12.303618+00:00",
+      "end_reason": "started_new",
+      "ended_by": 1065078001
+    },
+    "1065078001_7988565300": {
+      "users": [
+        {
+          "id": 1065078001,
+          "username": "P_r_a_d_pp"
+        },
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        }
+      ],
+      "started_at": "2025-05-21T17:36:31.279642+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T17:36:33.897178+00:00",
+          "sender_id": 7988565300,
+          "sender_username": "Abbaaaz9",
+          "receiver_id": 1065078001,
+          "receiver_username": "P_r_a_d_pp",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T17:53:57.935336+00:00",
+          "sender_id": 1065078001,
+          "sender_username": "P_r_a_d_pp",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "M here"
+        }
+      ],
+      "ended_at": "2025-05-21T17:54:07.809371+00:00",
+      "end_reason": "manual",
+      "ended_by": 7988565300
+    },
+    "7200913109_7349879385": {
+      "users": [
+        {
+          "id": 7349879385,
+          "username": "Hussain"
+        },
+        {
+          "id": 7200913109,
+          "username": "savvy_3608"
+        }
+      ],
+      "started_at": "2025-05-21T19:24:36.869097+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T19:24:47.698001+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T19:25:13.032686+00:00",
+          "sender_id": 7200913109,
+          "sender_username": "savvy_3608",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T19:25:39.751473+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "M/F?"
+        },
+        {
+          "timestamp": "2025-05-21T19:26:37.617716+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "??"
+        }
+      ],
+      "ended_at": "2025-05-21T19:26:55.152420+00:00",
+      "end_reason": "manual",
+      "ended_by": 7349879385
+    },
+    "6504069230_7349879385": {
+      "users": [
+        {
+          "id": 7349879385,
+          "username": "Hussain"
+        },
+        {
+          "id": 6504069230,
+          "username": "M1h25ki"
+        }
+      ],
+      "started_at": "2025-05-21T19:37:46.609174+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T19:38:13.430583+00:00",
+          "sender_id": 6504069230,
+          "sender_username": "M1h25ki",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain",
+          "message_type": "text",
+          "content": "Hi girl"
+        }
+      ],
+      "ended_at": "2025-05-21T19:39:24.650789+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6504069230
+    },
+    "6504069230_7200913109": {
+      "users": [
+        {
+          "id": 6504069230,
+          "username": "M1h25ki"
+        },
+        {
+          "id": 7200913109,
+          "username": "savvy_3608"
+        }
+      ],
+      "started_at": "2025-05-21T20:38:17.999893+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-21T20:38:32.731909+00:00",
+          "sender_id": 7200913109,
+          "sender_username": "savvy_3608",
+          "receiver_id": 6504069230,
+          "receiver_username": "M1h25ki",
+          "message_type": "text",
+          "content": "Ho"
+        },
+        {
+          "timestamp": "2025-05-21T20:38:34.214795+00:00",
+          "sender_id": 7200913109,
+          "sender_username": "savvy_3608",
+          "receiver_id": 6504069230,
+          "receiver_username": "M1h25ki",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T20:40:08.857654+00:00",
+          "sender_id": 6504069230,
+          "sender_username": "M1h25ki",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-21T20:40:13.702911+00:00",
+          "sender_id": 6504069230,
+          "sender_username": "M1h25ki",
+          "receiver_id": 7200913109,
+          "receiver_username": "savvy_3608",
+          "message_type": "text",
+          "content": "F?"
+        }
+      ],
+      "ended_at": "2025-05-21T20:40:18.011828+00:00",
+      "end_reason": "manual",
+      "ended_by": 7200913109
+    }
+  }
+}

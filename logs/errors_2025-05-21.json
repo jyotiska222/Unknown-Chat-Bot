@@ -43,6 +43,336 @@
       "additional_data": {
         "exc_type": "AttributeError"
       }
+    },
+    {
+      "timestamp": "2025-05-21T00:30:44.310633+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:30:50.112157+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:30:57.156941+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T00:31:03.093016+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T02:28:07.047121+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67eb490>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67eb490>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T03:16:06.704708+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67e9210>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67e9210>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T03:56:06.881404+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67d34d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67d34d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T04:40:11.468691+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67f1810>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67f1810>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T05:04:06.334130+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67f1c50>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7453e67f1c50>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:38:50.729550+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:38:51.736137+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:38:53.244993+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:38:55.499532+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:38:58.879943+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:39:03.948345+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:39:11.547459+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:39:22.941624+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:39:40.031805+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:40:05.672079+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:40:44.119767+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:41:14.126153+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-21T17:41:44.131069+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))",
+        "error_type": "NetworkError"
+      }
     }
   ]
 }

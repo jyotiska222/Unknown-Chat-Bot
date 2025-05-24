@@ -1,0 +1,113 @@
+{
+  "created_at": "2025-05-24T04:33:44.410055+00:00",
+  "chats": {
+    "6456744003_6654075765": {
+      "users": [
+        {
+          "id": 6654075765,
+          "username": "Major1m1"
+        },
+        {
+          "id": 6456744003,
+          "username": "raj_78888"
+        }
+      ],
+      "started_at": "2025-05-24T04:45:50.187558+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-24T04:45:53.489989+00:00",
+          "sender_id": 6456744003,
+          "sender_username": "raj_78888",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-24T04:46:43.223293+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 6456744003,
+          "receiver_username": "raj_78888",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-24T04:46:45.558957+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 6456744003,
+          "receiver_username": "raj_78888",
+          "message_type": "text",
+          "content": "From?"
+        },
+        {
+          "timestamp": "2025-05-24T04:46:52.670857+00:00",
+          "sender_id": 6456744003,
+          "sender_username": "raj_78888",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "India"
+        },
+        {
+          "timestamp": "2025-05-24T04:47:16.620607+00:00",
+          "sender_id": 6456744003,
+          "sender_username": "raj_78888",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Your name ?"
+        },
+        {
+          "timestamp": "2025-05-24T04:47:35.830085+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 6456744003,
+          "receiver_username": "raj_78888",
+          "message_type": "text",
+          "content": "Moi"
+        },
+        {
+          "timestamp": "2025-05-24T04:47:38.231340+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 6456744003,
+          "receiver_username": "raj_78888",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-05-24T04:48:17.252047+00:00",
+          "sender_id": 6456744003,
+          "sender_username": "raj_78888",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Raj"
+        },
+        {
+          "timestamp": "2025-05-24T04:48:23.866287+00:00",
+          "sender_id": 6456744003,
+          "sender_username": "raj_78888",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Where r u from"
+        },
+        {
+          "timestamp": "2025-05-24T04:49:51.021033+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 6456744003,
+          "receiver_username": "raj_78888",
+          "message_type": "text",
+          "content": "U again\nI am from ur pants"
+        }
+      ],
+      "ended_at": "2025-05-24T04:49:53.015149+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6654075765
+    }
+  }
+}

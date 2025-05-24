@@ -452,6 +452,159 @@
       "ended_at": "2025-05-20T12:19:47.021915+00:00",
       "end_reason": "manual",
       "ended_by": 997570281
+    },
+    "1383323644_6261300717": {
+      "users": [
+        {
+          "id": 6261300717,
+          "username": "jbiswas03"
+        },
+        {
+          "id": 1383323644,
+          "username": "sayan450"
+        }
+      ],
+      "started_at": "2025-05-20T19:14:20.524120+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-20T19:14:24.640781+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-20T19:14:28.731192+00:00",
+          "sender_id": 6261300717,
+          "sender_username": "jbiswas03",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "F here"
+        },
+        {
+          "timestamp": "2025-05-20T19:14:32.681194+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 6261300717,
+          "receiver_username": "jbiswas03",
+          "message_type": "text",
+          "content": "Accha"
+        }
+      ],
+      "ended_at": "2025-05-20T19:14:36.233559+00:00",
+      "end_reason": "manual",
+      "ended_by": 6261300717
+    },
+    "1383323644_7349879385": {
+      "users": [
+        {
+          "id": 1383323644,
+          "username": "sayan450"
+        },
+        {
+          "id": 7349879385,
+          "username": "Hussain"
+        }
+      ],
+      "started_at": "2025-05-20T19:24:50.339239+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-20T19:25:05.030524+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain",
+          "message_type": "text",
+          "content": "Hii"
+        },
+        {
+          "timestamp": "2025-05-20T19:25:12.726785+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-20T19:25:16.718360+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "M here"
+        },
+        {
+          "timestamp": "2025-05-20T19:25:47.627643+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "M/ F ??"
+        },
+        {
+          "timestamp": "2025-05-20T19:26:12.689358+00:00",
+          "sender_id": 1383323644,
+          "sender_username": "sayan450",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain",
+          "message_type": "text",
+          "content": "F"
+        },
+        {
+          "timestamp": "2025-05-20T19:26:22.992291+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "Frm where?"
+        },
+        {
+          "timestamp": "2025-05-20T19:27:17.631975+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 1383323644,
+          "receiver_username": "sayan450",
+          "message_type": "text",
+          "content": "??"
+        }
+      ],
+      "ended_at": "2025-05-20T19:27:44.686665+00:00",
+      "end_reason": "manual",
+      "ended_by": 7349879385
+    },
+    "7349879385_7988565300": {
+      "users": [
+        {
+          "id": 7988565300,
+          "username": "Abbaaaz9"
+        },
+        {
+          "id": 7349879385,
+          "username": "Hussain"
+        }
+      ],
+      "started_at": "2025-05-20T20:27:52.972790+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-20T20:28:01.490758+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain",
+          "receiver_id": 7988565300,
+          "receiver_username": "Abbaaaz9",
+          "message_type": "text",
+          "content": "Hi"
+        }
+      ],
+      "ended_at": "2025-05-20T20:28:24.910857+00:00",
+      "end_reason": "manual",
+      "ended_by": 7349879385
     }
   }
 }
