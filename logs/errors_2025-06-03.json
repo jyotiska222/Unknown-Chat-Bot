@@ -1,0 +1,112 @@
+{
+  "errors": [
+    {
+      "timestamp": "2025-06-03T22:33:23.766032+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "start",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 5688599438,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7cafe267d160>, <telegram.ext.callbackcontext.CallbackContext object at 0x7cafe26a5850>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:23.803552+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 5688599438,
+      "additional_data": {
+        "update_id": 731064142,
+        "chat_id": 5688599438,
+        "user_message": "/start",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:24.427585+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "start",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 5691202036,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7cafe267d300>, <telegram.ext.callbackcontext.CallbackContext object at 0x7cafe26a5850>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:24.446429+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 5691202036,
+      "additional_data": {
+        "update_id": 731064144,
+        "chat_id": 5691202036,
+        "user_message": "/start",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:24.996552+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "start",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 876701244,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7cafe267d570>, <telegram.ext.callbackcontext.CallbackContext object at 0x7cafe26bc4d0>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:25.016416+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 876701244,
+      "additional_data": {
+        "update_id": 731064146,
+        "chat_id": 876701244,
+        "user_message": "/start",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:25.587279+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "start",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 876701244,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7cafe267d640>, <telegram.ext.callbackcontext.CallbackContext object at 0x7cafe26bc4d0>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-03T22:33:25.608383+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 876701244,
+      "additional_data": {
+        "update_id": 731064147,
+        "chat_id": 876701244,
+        "user_message": "/start",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    }
+  ]
+}

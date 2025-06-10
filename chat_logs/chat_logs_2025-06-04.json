@@ -1,0 +1,41 @@
+{
+  "created_at": "2025-06-04T06:02:06.977679+00:00",
+  "chats": {
+    "6654075765_7623772260": {
+      "users": [
+        {
+          "id": 6654075765,
+          "username": "Major1m1"
+        },
+        {
+          "id": 7623772260,
+          "username": "Whitedevil07"
+        }
+      ],
+      "started_at": "2025-06-04T06:02:06.966430+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-06-04T06:02:10.947490+00:00",
+          "sender_id": 7623772260,
+          "sender_username": "Whitedevil07",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-06-04T06:02:17.319472+00:00",
+          "sender_id": 7623772260,
+          "sender_username": "Whitedevil07",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "M or f"
+        }
+      ],
+      "ended_at": "2025-06-04T08:51:55.886429+00:00",
+      "end_reason": "partner_unavailable",
+      "ended_by": 6654075765
+    }
+  }
+}

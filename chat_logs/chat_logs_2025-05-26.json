@@ -1,0 +1,41 @@
+{
+  "created_at": "2025-05-26T17:54:16.802261+00:00",
+  "chats": {
+    "6654075765_7349879385": {
+      "users": [
+        {
+          "id": 6654075765,
+          "username": "Major1m1"
+        },
+        {
+          "id": 7349879385,
+          "username": "Hussain 7417677323"
+        }
+      ],
+      "started_at": "2025-05-26T18:22:51.210220+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-26T18:23:00.458127+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-26T18:23:04.157789+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "M here"
+        }
+      ],
+      "ended_at": "2025-05-26T18:26:18.607399+00:00",
+      "end_reason": "manual",
+      "ended_by": 7349879385
+    }
+  }
+}

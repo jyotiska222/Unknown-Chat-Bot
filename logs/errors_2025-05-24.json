@@ -29,6 +29,141 @@
         "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7ed8944f21d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
         "error_type": "NetworkError"
       }
+    },
+    {
+      "timestamp": "2025-05-24T12:30:22.789925+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d404450>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d404450>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T14:00:19.640382+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fd6d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fd6d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T14:14:07.486942+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fc910>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fc910>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T15:42:06.599466+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fe2d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fe2d0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T17:02:07.177894+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fd890>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3fd890>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T19:38:07.415561+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f8390>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f8390>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T19:42:06.738241+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f9b90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f9b90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T22:50:11.891227+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f8950>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x78ca1d3f8950>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-24T23:48:06.745537+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7595f6198cd0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7595f6198cd0>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
     }
   ]
 }

@@ -1,0 +1,451 @@
+{
+  "errors": [
+    {
+      "timestamp": "2025-05-25T23:37:23.035202+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "start",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 894508670,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x709c13422c30>, <telegram.ext.callbackcontext.CallbackContext object at 0x709c13449750>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:37:23.068034+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 92, in start\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 894508670,
+      "additional_data": {
+        "update_id": 731063811,
+        "chat_id": 894508670,
+        "user_message": "/start",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:37:23.588048+05:30",
+      "error_type": "Unauthorized",
+      "error_message": "Forbidden: bot was blocked by the user",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/conversationhandler.py\", line 627, in handle_update\n    new_state = handler.handle_update(update, dispatcher, check_result, context)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 156, in chat\n    update.message.reply_text(\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/message.py\", line 977, in reply_text\n    return self.bot.send_message(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 134, in decorator\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 534, in send_message\n    return self._message(  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/extbot.py\", line 203, in _message\n    result = super()._message(\n             ^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 344, in _message\n    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/bot.py\", line 299, in _post\n    return self.request.post(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 361, in post\n    result = self._request_wrapper(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/utils/request.py\", line 277, in _request_wrapper\n    raise Unauthorized(message)\ntelegram.error.Unauthorized: Forbidden: bot was blocked by the user\n",
+      "user_id": 894508670,
+      "additional_data": {
+        "update_id": 731063812,
+        "chat_id": 894508670,
+        "user_message": "/chat",
+        "error": "Forbidden: bot was blocked by the user",
+        "error_type": "Unauthorized"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:42:06.761424+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x709c13453d90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x709c13453d90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:45:53.163881+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:45:57.258502+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:45:58.345347+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:46:02.940876+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:46:04.530518+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:46:09.883914+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:46:12.225583+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:11.026663+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:15.115594+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:16.206749+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:20.795771+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:22.387403+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:27.726226+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:30.069514+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:33.534555+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:37.001674+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:42.152514+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:46.244763+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:53.927055+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:48:58.019010+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:49:09.500348+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:49:13.591711+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:49:30.936069+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:49:34.857259+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:50:00.572846+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    },
+    {
+      "timestamp": "2025-05-25T23:50:04.662881+05:30",
+      "error_type": "Conflict",
+      "error_message": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+        "error_type": "Conflict"
+      }
+    }
+  ]
+}

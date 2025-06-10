@@ -1,10 +1,11 @@
 {
-  "total_errors": 42,
+  "total_errors": 92,
   "error_types": {
     "TypeError": 2,
-    "AttributeError": 6,
-    "Conflict": 4,
-    "NetworkError": 30
+    "AttributeError": 10,
+    "Conflict": 17,
+    "NetworkError": 52,
+    "Unauthorized": 11
   },
-  "updated_at": "2025-05-24T10:06:06.519917+05:30"
+  "updated_at": "2025-06-04T11:30:17.625784+05:30"
 }

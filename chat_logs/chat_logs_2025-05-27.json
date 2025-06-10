@@ -1,0 +1,139 @@
+{
+  "created_at": "2025-05-27T17:54:19.383676+00:00",
+  "chats": {
+    "6654075765_6688790694": {
+      "users": [
+        {
+          "id": 6654075765,
+          "username": "Major1m1"
+        },
+        {
+          "id": 6688790694,
+          "username": "perplexedraj"
+        }
+      ],
+      "started_at": "2025-05-27T17:54:23.741628+00:00",
+      "messages": [],
+      "ended_at": "2025-05-27T17:54:24.067341+00:00",
+      "end_reason": "started_new",
+      "ended_by": 6654075765
+    },
+    "6654075765_7349879385": {
+      "users": [
+        {
+          "id": 6654075765,
+          "username": "Major1m1"
+        },
+        {
+          "id": 7349879385,
+          "username": "Hussain 7417677323"
+        }
+      ],
+      "started_at": "2025-05-27T19:05:33.788780+00:00",
+      "messages": [
+        {
+          "timestamp": "2025-05-27T19:05:39.608956+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-27T19:05:41.851768+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "Hi"
+        },
+        {
+          "timestamp": "2025-05-27T19:05:46.451271+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "Which country"
+        },
+        {
+          "timestamp": "2025-05-27T19:05:49.107037+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Yur name?"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:04.291357+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Frm india"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:07.608872+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "Mirre"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:09.048763+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "U?"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:17.648769+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "Arman"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:43.048733+00:00",
+          "sender_id": 7349879385,
+          "sender_username": "Hussain 7417677323",
+          "receiver_id": 6654075765,
+          "receiver_username": "Major1m1",
+          "message_type": "text",
+          "content": "M/ F?"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:53.040734+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\nArman u still here"
+        },
+        {
+          "timestamp": "2025-05-27T19:06:58.680945+00:00",
+          "sender_id": 6654075765,
+          "sender_username": "Major1m1",
+          "receiver_id": 7349879385,
+          "receiver_username": "Hussain 7417677323",
+          "message_type": "text",
+          "content": "\ud83d\ude02\ud83e\udef5"
+        }
+      ],
+      "ended_at": "2025-05-27T19:07:05.881099+00:00",
+      "end_reason": "manual",
+      "ended_by": 7349879385
+    }
+  }
+}

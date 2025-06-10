@@ -1,0 +1,118 @@
+{
+  "errors": [
+    {
+      "timestamp": "2025-06-04T01:20:54.364967+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'text'",
+      "location": "forward",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 355, in forward\n    if update.message.text and not update.message.text.startswith('/'):\n       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'text'\n",
+      "user_id": 6654075765,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7e0c12f4e410>, <telegram.ext.callbackcontext.CallbackContext object at 0x7e0c12f66bd0>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T01:20:54.411132+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'text'",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 355, in forward\n    if update.message.text and not update.message.text.startswith('/'):\n       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'text'\n",
+      "user_id": 6654075765,
+      "additional_data": {
+        "update_id": 731064175,
+        "chat_id": 6654075765,
+        "user_message": "North africa",
+        "error": "'NoneType' object has no attribute 'text'",
+        "error_type": "AttributeError"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T01:21:42.332288+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'text'",
+      "location": "forward",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 355, in forward\n    if update.message.text and not update.message.text.startswith('/'):\n       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'text'\n",
+      "user_id": 6654075765,
+      "additional_data": {
+        "args": "(<telegram.update.Update object at 0x7e0c12f4e8f0>, <telegram.ext.callbackcontext.CallbackContext object at 0x7e0c12f66450>)",
+        "kwargs": "{}"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T01:21:42.348929+05:30",
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'text'",
+      "location": "telegram_update",
+      "stack_trace": "Traceback (most recent call last):\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/dispatcher.py\", line 557, in process_update\n    handler.handle_update(update, self, check, context)\n  File \"/home/jbijbi0022/.local/lib/python3.11/site-packages/telegram/ext/handler.py\", line 199, in handle_update\n    return self.callback(update, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/error_logger.py\", line 286, in wrapper\n    return func(*f_args, **f_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jbijbi0022/Unknown-Chat-Bot/bot.py\", line 355, in forward\n    if update.message.text and not update.message.text.startswith('/'):\n       ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'text'\n",
+      "user_id": 6654075765,
+      "additional_data": {
+        "update_id": 731064182,
+        "chat_id": 6654075765,
+        "user_message": "Like what",
+        "error": "'NoneType' object has no attribute 'text'",
+        "error_type": "AttributeError"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T05:48:05.464672+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b5510>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b5510>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T09:12:05.886468+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b1a90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b1a90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T10:12:06.127325+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b2e90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105b2e90>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    },
+    {
+      "timestamp": "2025-06-04T11:30:17.411302+05:30",
+      "error_type": "NetworkError",
+      "error_message": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105c1910>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+      "location": "telegram_update",
+      "stack_trace": "NoneType: None\n",
+      "user_id": null,
+      "additional_data": {
+        "update_id": null,
+        "chat_id": null,
+        "user_message": null,
+        "error": "urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7593677131:AAEpUpS8NkD6gIOU5o26xvtbjOq15g_rLis/getUpdates (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7e0c105c1910>: Failed to establish a new connection: [Errno 111] Connection refused')))",
+        "error_type": "NetworkError"
+      }
+    }
+  ]
+}
